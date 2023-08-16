@@ -197,6 +197,14 @@ wget https://raw.githubusercontent.com/givpn/AutoScriptXray/master/xray/ins-xray
 wget https://raw.githubusercontent.com/givpn/AutoScriptXray/master/sshws/insshws.sh && chmod +x insshws.sh && ./insshws.sh
 clear
 cat> /root/.profile << END
+#Instal Xray
+echo -e "\e[33m-----------------------------------\033[0m"
+echo -e "$BGreen        Install SSH SSTP           $NC"
+echo -e "\e[33m-----------------------------------\033[0m"
+sleep 0.5
+clear
+wget https://raw.githubusercontent.com/hokagelegend2023/alpha/main/sstp/sstp.sh && chmod +x sstp.sh && screen -S sstp ./sstp.sh
+clear
 # ~/.profile: executed by Bourne-compatible login shells.
 
 if [ "$BASH" ]; then
