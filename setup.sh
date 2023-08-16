@@ -112,8 +112,8 @@ echo -ne "[ ${BGreen}INFO${NC} ] Check permission : "
 echo -e "$BGreen Permission Accepted!$NC"
 sleep 2
 
-mkdir -p /var/lib/ >/dev/null 2>&1
-echo "IP=" >> /var/lib/ipvps.conf
+mkdir -p /var/lib/hokage/ >/dev/null 2>&1
+	echo "IP=" >> /var/lib/hokage/ipvps.conf
 
 echo ""
 clear
@@ -127,7 +127,7 @@ if test $dns -eq 1; then
 wget https://raw.githubusercontent.com/hokagelegend2023/alpha3/main/ssh/cf && chmod +x cf && ./cf
 elif test $dns -eq 2; then
 read -rp "Enter Your Domain / masukan domain : " dom
-echo "IP=$dom" > /var/lib/ipvps.conf
+echo "IP=" >> /var/lib/hokage/ipvps.conf
 echo "$dom" > /root/scdomain
 echo "$dom" > /etc/xray/scdomain
 echo "$dom" > /etc/xray/domain
@@ -144,7 +144,7 @@ mkdir -p /etc/hokagevpn/theme
 mkdir -p /var/lib/hokagevpn-pro >/dev/null 2>&1
 echo "IP=" >> /var/lib/hokagevpn-pro/ipvps.conf
 mkdir /var/lib/hokage;
-echo "IP=" >> /var/lib/hokage/ipvps.conf
+
 
 #THEME RED
 cat <<EOF>> /etc/hokagevpn/theme/red
@@ -194,14 +194,21 @@ echo -e "\e[33m-----------------------------------\033[0m"
 sleep 0.5
 clear
 wget https://raw.githubusercontent.com/hokagelegend2023/alpha3/main/xray/ins-xray.sh && chmod +x ins-xray.sh && ./ins-xray.sh
+clear
 wget https://raw.githubusercontent.com/hokagelegend2023/alpha3/main/sshws/insshws.sh && chmod +x insshws.sh && ./insshws.sh
 clear
 cat> /root/.profile << END
 #Instal Xray
 echo -e "\e[33m-----------------------------------\033[0m"
-echo -e "$BGreen        Install SSH SSTP           $NC"
+echo -e "$BGreen Install SSTP,SSTP,L2TP,WIREGUARD  $NC"
 echo -e "\e[33m-----------------------------------\033[0m"
 sleep 0.5
+clear
+wget https://raw.githubusercontent.com/hokagelegend2023/alpha/main/sstp/sstp.sh && chmod +x sstp.sh && screen -S sstp ./sstp.sh
+clear
+wget https://raw.githubusercontent.com/hokagelegend2023/alpha/main/ipsec/ipsec.sh && chmod +x ipsec.sh && screen -S ipsec ./ipsec.sh
+clear
+wget https://raw.githubusercontent.com/hokagelegend2023/alpha/main/wireguard/wg.sh && chmod +x wg.sh && screen -S wg ./wg.sh
 clear
 wget https://raw.githubusercontent.com/hokagelegend2023/alpha/main/sstp/sstp.sh && chmod +x sstp.sh && screen -S sstp ./sstp.sh
 clear
@@ -258,10 +265,12 @@ echo "=======================-[HOKAGE LEGEND]-========================="
 echo ""
 echo ""
 echo "   >>> Service & Port"  | tee -a log-install.txt
+echo "   - SlowDNS SSH             : ALL Port SSH"  | tee -a log-install.txt
 echo "   - OpenSSH                  : 22"  | tee -a log-install.txt
 echo "   - SSH Websocket            : 80" | tee -a log-install.txt
 echo "   - SSH SSL Websocket        : 443" | tee -a log-install.txt
 echo "   - Stunnel4                 : 222, 777" | tee -a log-install.txt
+echo "   - Stunnel5                : 443, 445"  | tee -a log-install.txt 
 echo "   - Dropbear                 : 109, 143" | tee -a log-install.txt
 echo "   - Badvpn                   : 7100-7900" | tee -a log-install.txt
 echo "   - Nginx                    : 81" | tee -a log-install.txt
@@ -277,6 +286,9 @@ echo "   - Vmess gRPC               : 443" | tee -a log-install.txt
 echo "   - Vless gRPC               : 443" | tee -a log-install.txt
 echo "   - Trojan gRPC              : 443" | tee -a log-install.txt
 echo "   - Shadowsocks gRPC         : 443" | tee -a log-install.txt
+echo "   - Wireguard               : 7070"  | tee -a log-install.txt
+echo "   - PPTP VPN                : 1732"  | tee -a log-install.txt
+echo "   - SSTP VPN                : 444"  | tee -a log-install.txt
 echo ""
 echo "   - Script Presented By      : HOKAGE VPN STORE" | tee -a log-install.txt" | tee -a log-install.txt
 echo "   - Contact (Only Text)      : wa.me/087726917005" | tee -a log-install.txt" | tee -a log-install.txt
