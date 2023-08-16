@@ -36,17 +36,15 @@ clear
 
 # GETTING OS INFORMATION
 source /etc/os-release
-Versi_OS=$VERSION
-ver=$VERSION_ID
-Tipe=$NAME
+Versi_OS=$VERSION 
+Name=$(curl -sS https://raw.githubusercontent.com/hokagelegend2023/ipmini/main/ijin )
 URL_SUPPORT=$HOME_URL
 basedong=$ID
-
 # VPS ISP INFORMATION
 echo -e "$ITAM"
 MYIP=$(curl -s ifconfig.me )
-REGION=$( curl -s ipinfo.io/region?token=ce3da57536810d )
-CITY=$( curl -s ipinfo.io/city?token=ce3da57536810d )
+ISP=$(curl -s ipinfo.io/org | cut -d " " -f 2-10 )
+CITY=$(curl -s ipinfo.io/city )
 
 # CHEK STATUS
 tls_v2ray_status=$(systemctl status xray | grep Active | awk '{print $3}' | cut -d "(" -f2 | cut -d ")" -f1)
@@ -195,16 +193,17 @@ kernelku=$(uname -r)
 
 # DNS PATCH
 #tipeos2=$(uname -m)
-Name=$"givpn"
+Name=$(cat /opt/.ver)
 Exp=$"Lifetime"
 # GETTING DOMAIN NAME
 Domen="$(cat /etc/xray/domain)"
+Name=$(curl -sS https://raw.githubusercontent.com/hokagelegend2023/ipmini/main/ijin | grep $MYIP | awk '{print $2}')
 echo -e ""
 echo -e "\e[1;33m -------------------------------------------------\e[0m"
 echo -e "\e[1;34m                 SYSTEM INFORMATION               \e[0m"
 echo -e "\e[1;33m -------------------------------------------------\e[0m"
-echo -e "\e[1;32m Hostname  \e[0m: $HOSTNAME"
-echo -e "\e[1;32m OS Name   \e[0m: $Tipe"
+echo -e "\e[1;32m Hostname  \e[0m: $Name"
+echo -e "\e[1;32m OS Name   \e[0m: $VERSION"
 echo -e "\e[1;32m Total RAM \e[0m: ${totalram} MB"
 echo -e "\e[1;32m Public IP \e[0m: $MYIP"
 echo -e "\e[1;32m Domain    \e[0m: $Domen"
@@ -213,7 +212,7 @@ echo -e "\e[1;34m              SUBSCRIPTION INFORMATION            \e[0m"
 echo -e "\e[1;33m -------------------------------------------------\e[0m"
 echo -e "\e[1;32m Client Name \e[0m: $Name"
 echo -e "\e[1;32m Exp Script  \e[0m: $Exp"
-echo -e "\e[1;32m Version     \e[0m: 1.0"
+echo -e "\e[1;32m Version     \e[0m: 3 (Alpha)"
 echo -e "\e[1;33m -------------------------------------------------\e[0m"
 echo -e "\e[1;34m                SERVICE INFORMATION               \e[0m"
 echo -e "\e[1;33m -------------------------------------------------\e[0m"
@@ -232,7 +231,7 @@ echo -e "\e[1;32m Shadowsocks          \e[0m: $status_shadowsocks"
 echo -e "\e[1;32m Websocket TLS        \e[0m: $swstls"
 echo -e "\e[1;32m Websocket None TLS   \e[0m: $swstls"
 echo -e "\e[1;33m -------------------------------------------------\e[0m"
-echo -e "\e[1;34m                     t.me/givpn                   \e[0m"
+echo -e "\e[1;34m                    HOKAGE LEGEND                 \e[0m"
 echo -e "\e[1;33m -------------------------------------------------\e[0m"
 echo ""
 read -n 1 -s -r -p "Press any key to back on menu"
