@@ -75,13 +75,22 @@ fi
 export RED='\033[0;31m'
 export GREEN='\033[0;32m'
 
-# // SSH Websocket Proxy
-ssh_ws=$( systemctl status ws-tls | grep Active | awk '{print $3}' | sed 's/(//g' | sed 's/)//g' )
-if [[ $ssh_ws == "running" ]]; then
-    status_ws="${GREEN}ON${NC}"
+# // SSH Websocket Proxy Stunnel
+ssh_wst=$( systemctl status ws-stunnel.service | grep Active | awk '{print $3}' | sed 's/(//g' | sed 's/)//g' )
+if [[ $ssh_wst == "running" ]]; then
+    status_wst="${GREEN}ON${NC}"
 else
-    status_ws="${RED}OFF${NC}"
+    status_wst="${RED}OFF${NC}"
 fi
+
+# // SSH Websocket Proxy Dropbear
+ssh_wstdb=$( systemctl status ws-stunnel.service | grep Active | awk '{print $3}' | sed 's/(//g' | sed 's/)//g' )
+if [[ $ssh_wstdb == "running" ]]; then
+    status_wstdb="${GREEN}ON${NC}"
+else
+    status_wstdb="${RED}OFF${NC}"
+fi
+
 
 # // nginx
 nginx=$( systemctl status nginx | grep Active | awk '{print $3}' | sed 's/(//g' | sed 's/)//g' )
@@ -219,7 +228,7 @@ echo -e "$COLOR1  $NC Current Domain : $(cat /etc/xray/domain)          "
 echo -e "$COLOR1  $NC IP-VPS         : ${COLOR1}$IPVPS${NC}         "
 echo -e "$COLOR1 <<─────────────────────────────────────────────────────>>${NC}"
 echo -e "$COLOR1┌────────────────────────────────────────────────────────┐${NC}"
-echo -e "$COLOR1│$NC [ SSH WS   : ${status_ws} ]  [ XRAY : ${status_xray} ]      [ NGINX : ${status_nginx} ]  $COLOR1│$NC"
+echo -e "$COLOR1│$NC [ SSH WS   : ${status_wst} ]  [ XRAY : ${status_xray} ]      [ NGINX : ${status_nginx} ]  $COLOR1│$NC"
 echo -e "$COLOR1│$NC                                                        $COLOR1│$NC"
 echo -e "$COLOR1│$NC [ SW-SHOCK : ${status_xray} ]  [ DROPBEAR : ${status_dropbear} ]  [ PPTP : ${status_pptp} ]    $COLOR1│$NC"
 echo -e "$COLOR1│$NC                                                        $COLOR1│$NC"
