@@ -265,7 +265,7 @@ datediff() {
 mai="datediff "$Exp" "$DATE""
 
 echo -e "$COLOR1┌─────────────────────────────────────────────────┐$NC"
-echo -e "$COLOR1│$NC Version     :${COLOR1} $(cat /opt/.ver) (ALPHA1)Latest Version        $COLOR1│$NC"
+echo -e "$COLOR1│$NC Version     :${COLOR1} $(cat /opt/.ver) (ALPHA3)Latest Version        $COLOR1│$NC"
 echo -e "$COLOR1│$NC Client Name : $Name                           $COLOR1│$NC"
 if [ $exp \> 1000 ];
 then
@@ -291,10 +291,10 @@ case $opt in
 09 | 9) clear ; pptpmenu ;;
 10 | 10) clear ; menu-backup ;;
 11 | 11) clear ; menuinfo ;;
-12 | 12) clear ; menu-theme ;;
+12 | 12) clear ; menutheme ;;
 13 | 13) clear ; m-system ;;
 14 | 14) clear ; menuinfo ;;
-15 | 15) clear ; addhost ;;
+15 | 15) clear ; m-domain ;;
 16 | 16) clear ; certv2ray  ;;
 100) clear ; $up2u ;;
 00 | 0) clear ; menu ;;
