@@ -140,7 +140,46 @@ fi
 echo -e "${BGreen}Done!${NC}"
 sleep 2
 clear
-    
+mkdir -p /etc/hokagevpn/theme
+mkdir -p /var/lib/hokagevpn-pro >/dev/null 2>&1
+echo "IP=" >> /var/lib/hokagevpn-pro/ipvps.conf
+mkdir /var/lib/hokage;
+echo "IP=" >> /var/lib/hokage/ipvps.conf
+
+#THEME RED
+cat <<EOF>> /etc/hokagevpn/theme/red
+BG : \E[40;1;41m
+TEXT : \033[0;31m
+EOF
+#THEME BLUE
+cat <<EOF>> /etc/hokagevpn/theme/blue
+BG : \E[40;1;44m
+TEXT : \033[0;34m
+EOF
+#THEME GREEN
+cat <<EOF>> /etc/hokagevpn/theme/green
+BG : \E[40;1;42m
+TEXT : \033[0;32m
+EOF
+#THEME YELLOW
+cat <<EOF>> /etc/hokagevpn/theme/yellow
+BG : \E[40;1;43m
+TEXT : \033[0;33m
+EOF
+#THEME MAGENTA
+cat <<EOF>> /etc/hokagevpn/theme/magenta
+BG : \E[40;1;43m
+TEXT : \033[0;33m
+EOF
+#THEME CYAN
+cat <<EOF>> /etc/hokagevpn/theme/cyan
+BG : \E[40;1;46m
+TEXT : \033[0;36m
+EOF
+#THEME CONFIG
+cat <<EOF>> /etc/hokagevpn/theme/color.conf
+blue
+EOF
 #install ssh ovpn
 echo -e "\e[33m-----------------------------------\033[0m"
 echo -e "$BGreen      Install SSH Websocket           $NC"
