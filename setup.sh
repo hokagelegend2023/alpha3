@@ -198,14 +198,6 @@ clear
 wget https://raw.githubusercontent.com/hokagelegend2023/alpha3/main/sshws/insshws.sh && chmod +x insshws.sh && ./insshws.sh
 clear
 cat> /root/.profile << END
-#Instal Xray
-echo -e "\e[33m-----------------------------------\033[0m"
-echo -e "$BGreen Install SSTP,SSTP,L2TP,WIREGUARD  $NC"
-echo -e "\e[33m-----------------------------------\033[0m"
-sleep 0.5
-clear
-wget https://raw.githubusercontent.com/hokagelegend2023/alpha/main/sstp/sstp.sh && chmod +x sstp.sh && screen -S sstp ./sstp.sh
-clear
 # ~/.profile: executed by Bourne-compatible login shells.
 
 if [ "$BASH" ]; then
@@ -255,7 +247,7 @@ fi
 curl -sS ipv4.icanhazip.com > /etc/myipvps
 echo ""
 echo "=======================-[HOKAGE LEGEND]-========================="
-echo "
+echo ""
 echo "   >>> Service & Port"  | tee -a log-install.txt
 echo "   - SlowDNS SSH             : ALL Port SSH"  | tee -a log-install.txt
 echo "   - OpenSSH                  : 22"  | tee -a log-install.txt
@@ -281,7 +273,7 @@ echo "   - Shadowsocks gRPC         : 443" | tee -a log-install.txt
 echo "   - Wireguard               : 7070"  | tee -a log-install.txt
 echo "   - PPTP VPN                : 1732"  | tee -a log-install.txt
 echo "   - SSTP VPN                : 444"  | tee -a log-install.txt
-echo "
+echo ""
 echo "   - Script Presented By      : HOKAGE VPN STORE" | tee -a log-install.txt" | tee -a log-install.txt
 echo "   - Contact (Only Text)      : wa.me/087726917005" | tee -a log-install.txt" | tee -a log-install.txt
 echo "=============================Contact==============================" | tee -a log-install.txt
