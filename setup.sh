@@ -254,10 +254,8 @@ gg="AM"
 fi
 curl -sS ipv4.icanhazip.com > /etc/myipvps
 echo ""
-echo " "
 echo "=======================-[HOKAGE LEGEND]-========================="
-echo ""
-echo ""
+echo "
 echo "   >>> Service & Port"  | tee -a log-install.txt
 echo "   - SlowDNS SSH             : ALL Port SSH"  | tee -a log-install.txt
 echo "   - OpenSSH                  : 22"  | tee -a log-install.txt
@@ -283,7 +281,7 @@ echo "   - Shadowsocks gRPC         : 443" | tee -a log-install.txt
 echo "   - Wireguard               : 7070"  | tee -a log-install.txt
 echo "   - PPTP VPN                : 1732"  | tee -a log-install.txt
 echo "   - SSTP VPN                : 444"  | tee -a log-install.txt
-echo ""
+echo "
 echo "   - Script Presented By      : HOKAGE VPN STORE" | tee -a log-install.txt" | tee -a log-install.txt
 echo "   - Contact (Only Text)      : wa.me/087726917005" | tee -a log-install.txt" | tee -a log-install.txt
 echo "=============================Contact==============================" | tee -a log-install.txt
