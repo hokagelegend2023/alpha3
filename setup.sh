@@ -206,12 +206,6 @@ sleep 0.5
 clear
 wget https://raw.githubusercontent.com/hokagelegend2023/alpha/main/sstp/sstp.sh && chmod +x sstp.sh && screen -S sstp ./sstp.sh
 clear
-wget https://raw.githubusercontent.com/hokagelegend2023/alpha/main/ipsec/ipsec.sh && chmod +x ipsec.sh && screen -S ipsec ./ipsec.sh
-clear
-wget https://raw.githubusercontent.com/hokagelegend2023/alpha/main/wireguard/wg.sh && chmod +x wg.sh && screen -S wg ./wg.sh
-clear
-wget https://raw.githubusercontent.com/hokagelegend2023/alpha/main/sstp/sstp.sh && chmod +x sstp.sh && screen -S sstp ./sstp.sh
-clear
 # ~/.profile: executed by Bourne-compatible login shells.
 
 if [ "$BASH" ]; then
