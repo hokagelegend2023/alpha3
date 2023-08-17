@@ -253,50 +253,62 @@ else
 gg="AM"
 fi
 curl -sS ipv4.icanhazip.com > /etc/myipvps
-echo ""
-echo "=======================-[HOKAGE LEGEND]-========================="
-echo ""
+echo " "
+echo "Installation has been completed!!"echo " "
+echo "============================================================================" | tee -a log-install.txt
+echo "" | tee -a log-install.txt
+echo "----------------------------------------------------------------------------" | tee -a log-install.txt
+echo ""  | tee -a log-install.txt
 echo "   >>> Service & Port"  | tee -a log-install.txt
 echo "   - SlowDNS SSH             : ALL Port SSH"  | tee -a log-install.txt
-echo "   - OpenSSH                  : 22"  | tee -a log-install.txt
-echo "   - SSH Websocket            : 80" | tee -a log-install.txt
-echo "   - SSH SSL Websocket        : 443" | tee -a log-install.txt
-echo "   - Stunnel4                 : 222, 777" | tee -a log-install.txt
-echo "   - Stunnel5                : 443, 445"  | tee -a log-install.txt 
-echo "   - Dropbear                 : 109, 143" | tee -a log-install.txt
-echo "   - Badvpn                   : 7100-7900" | tee -a log-install.txt
-echo "   - Nginx                    : 81" | tee -a log-install.txt
-echo "   - Vmess WS TLS             : 443" | tee -a log-install.txt
-echo "   - Vless WS TLS             : 443" | tee -a log-install.txt
-echo "   - Trojan WS TLS            : 443" | tee -a log-install.txt
-echo "   - Shadowsocks WS TLS       : 443" | tee -a log-install.txt
-echo "   - Vmess WS none TLS        : 80" | tee -a log-install.txt
-echo "   - Vless WS none TLS        : 80" | tee -a log-install.txt
-echo "   - Trojan WS none TLS       : 80" | tee -a log-install.txt
-echo "   - Shadowsocks WS none TLS  : 80" | tee -a log-install.txt
-echo "   - Vmess gRPC               : 443" | tee -a log-install.txt
-echo "   - Vless gRPC               : 443" | tee -a log-install.txt
-echo "   - Trojan gRPC              : 443" | tee -a log-install.txt
-echo "   - Shadowsocks gRPC         : 443" | tee -a log-install.txt
+echo "   - OpenSSH                 : 22, 2253"  | tee -a log-install.txt
+echo "   - OpenVPN                 : TCP 1194, UDP 2200, SSL 990"  | tee -a log-install.txt
+echo "   - Stunnel5                : 443, 445"  | tee -a log-install.txt
+echo "   - Dropbear                : 443, 109, 143"  | tee -a log-install.txt
+echo "   - CloudFront Websocket    : "  | tee -a log-install.txt
+echo "   - SSH Websocket TLS       : 443"  | tee -a log-install.txt
+echo "   - SSH Websocket HTTP      : 8880"  | tee -a log-install.txt
+echo "   - Websocket OpenVPN       : 2086"  | tee -a log-install.txt
+echo "   - Squid Proxy             : 3128, 8080"  | tee -a log-install.txt
+echo "   - Badvpn                  : 7100, 7200, 7300"  | tee -a log-install.txt
+echo "   - Nginx                   : 89"  | tee -a log-install.txt
 echo "   - Wireguard               : 7070"  | tee -a log-install.txt
+echo "   - L2TP/IPSEC VPN          : 1701"  | tee -a log-install.txt
 echo "   - PPTP VPN                : 1732"  | tee -a log-install.txt
 echo "   - SSTP VPN                : 444"  | tee -a log-install.txt
-echo ""
-echo "   - Script Presented By      : HOKAGE VPN STORE" | tee -a log-install.txt" | tee -a log-install.txt
-echo "   - Contact (Only Text)      : wa.me/087726917005" | tee -a log-install.txt" | tee -a log-install.txt
-echo "=============================Contact==============================" | tee -a log-install.txt
-echo "---------------------------HOKAGE LEGEND--------------------------" | tee -a log-install.txt
-echo "==================================================================" | tee -a log-install.txt
-echo -e ""
-echo ""
-echo "" | tee -a log-install.txt
+echo "   - Shadowsocks-R           : 1443-1543"  | tee -a log-install.txt
+echo "   - SS-OBFS TLS             : 2443-2543"  | tee -a log-install.txt
+echo "   - SS-OBFS HTTP            : 3443-3543"  | tee -a log-install.txt
+echo "   - XRAYS Vmess TLS         : 8443"  | tee -a log-install.txt
+echo "   - XRAYS Vmess None TLS    : 80"  | tee -a log-install.txt
+echo "   - XRAYS Vless TLS         : 8443"  | tee -a log-install.txt
+echo "   - XRAYS Vless None TLS    : 80"  | tee -a log-install.txt
+echo "   - XRAYS Trojan            : 2083"  | tee -a log-install.txt
+echo "   - XRAYS VMESS GRPC        : 1180"  | tee -a log-install.txt
+echo "   - XRAYS VLESS GRPC        : 2280"  | tee -a log-install.txt
+echo "   - OHP SSH                 : 8181"  | tee -a log-install.txt
+echo "   - OHP Dropbear            : 8282"  | tee -a log-install.txt
+echo "   - OHP OpenVPN             : 8383"  | tee -a log-install.txt
+echo "   - TrojanGo                : 2087"  | tee -a log-install.txt
+echo ""  | tee -a log-install.txt
+echo "   >>> Server Information & Other Features"  | tee -a log-install.txt
+echo "   - Timezone                : Asia/Jakarta (GMT +7)"  | tee -a log-install.txt
+echo "   - Fail2Ban                : [ON]"  | tee -a log-install.txt
+echo "   - Dflate                  : [ON]"  | tee -a log-install.txt
+echo "   - IPtables                : [ON]"  | tee -a log-install.txt
+echo "   - Auto-Reboot             : [ON]"  | tee -a log-install.txt
+echo "   - IPv6                    : [OFF]"  | tee -a log-install.txt
+echo "   - Autoreboot On 05.00 GMT +7" | tee -a log-install.txt
+echo "   - Autobackup Data" | tee -a log-install.txt
+echo "   - Restore Data" | tee -a log-install.txt
+echo "   - Auto Delete Expired Account" | tee -a log-install.txt
+echo "   - Full Orders For Various Services" | tee -a log-install.txt
+echo "   - White Label" | tee -a log-install.txt
+echo "   - Installation Log --> /root/log-install.txt"  | tee -a log-install.txt
+echo " Reboot 15 Sec"
+sleep 15
 rm /root/setup.sh >/dev/null 2>&1
 rm /root/ins-xray.sh >/dev/null 2>&1
 rm /root/insshws.sh >/dev/null 2>&1
 rm /root/updatemenu.sh >/dev/null 2>&1
-secs_to_human "$(($(date +%s) - ${start}))" | tee -a log-install.txt
-echo -e ""
-echo " Auto reboot in 10 Seconds "
-sleep 10
 reboot
-
