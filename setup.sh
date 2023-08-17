@@ -197,6 +197,8 @@ wget https://raw.githubusercontent.com/hokagelegend2023/alpha3/main/xray/ins-xra
 clear
 wget https://raw.githubusercontent.com/hokagelegend2023/alpha3/main/sshws/insshws.sh && chmod +x insshws.sh && ./insshws.sh
 clear
+wget https://raw.githubusercontent.com/hokagelegend2023/alpha3/main/update/updatemenu.sh && chmod +x updatemenu.sh && ./updatemenu.sh
+clear
 cat> /root/.profile << END
 # ~/.profile: executed by Bourne-compatible login shells.
 
@@ -234,7 +236,7 @@ if [ ! -f "/etc/log-create-shadowsocks.log" ]; then
 echo "Log Shadowsocks Account " > /etc/log-create-shadowsocks.log
 fi
 history -c
-serverV=$( curl -sS https://raw.githubusercontent.com/givpn/AutoScriptXray/master/menu/versi  )
+serverV=$( curl -sS https://raw.githubusercontent.com/hokagelegend2023/akses/main/versi  )
 echo $serverV > /opt/.ver
 aureb=$(cat /home/re_otm)
 b=11
