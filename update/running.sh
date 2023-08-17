@@ -55,7 +55,6 @@ CITY=$(curl -s ipinfo.io/city )
 #clear
 
 # CHEK STATUS 
-l2tp_status=$(systemctl status xl2tpd | grep Active | awk '{print $3}' | cut -d "(" -f2 | cut -d ")" -f1)
 openvpn_service="$(systemctl show openvpn.service --no-page)"
 oovpn=$(echo "${openvpn_service}" | grep 'ActiveState=' | cut -f2 -d=)
 #status_openvp=$(/etc/init.d/openvpn status | grep Active | awk '{print $3}' | cut -d "(" -f2 | cut -d ")" -f1)
@@ -83,10 +82,6 @@ ssh_service=$(/etc/init.d/ssh status | grep Active | awk '{print $3}' | cut -d "
 vnstat_service=$(/etc/init.d/vnstat status | grep Active | awk '{print $3}' | cut -d "(" -f2 | cut -d ")" -f1)
 cron_service=$(/etc/init.d/cron status | grep Active | awk '{print $3}' | cut -d "(" -f2 | cut -d ")" -f1)
 fail2ban_service=$(/etc/init.d/fail2ban status | grep Active | awk '{print $3}' | cut -d "(" -f2 | cut -d ")" -f1)
-wg="$(systemctl show wg-quick@wg0.service --no-page)"
-swg=$(echo "${wg}" | grep 'ActiveState=' | cut -f2 -d=)
-trgo="$(systemctl show trojan-go.service --no-page)"                                      
-strgo=$(echo "${trgo}" | grep 'ActiveState=' | cut -f2 -d=)  
 sswg=$(systemctl status wg-quick@wg0 | grep Active | awk '{print $3}' | cut -d "(" -f2 | cut -d ")" -f1)
 wstls=$(systemctl status ws-tls | grep Active | awk '{print $3}' | cut -d "(" -f2 | cut -d ")" -f1)
 wsdrop=$(systemctl status ws-nontls | grep Active | awk '{print $3}' | cut -d "(" -f2 | cut -d ")" -f1)
@@ -375,26 +370,14 @@ echo -e "${CYAN}━━━━━━━━━━━━━━━━━━━━━�
 echo -e "\E[44;1;39m            ⇱ Service Information ⇲             \E[0m"
 echo -e "${CYAN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
 echo -e "❇️ SSH / TUN               :$status_ssh"
-echo -e "❇️ OpenVPN                 :$status_openvpn"
 echo -e "❇️ Dropbear                :$status_beruangjatuh"
-echo -e "❇️ Stunnel5                :$status_stunnel"
-echo -e "❇️ Squid                   :$status_squid"
 echo -e "❇️ Fail2Ban                :$status_fail2ban"
 echo -e "❇️ Crons                   :$status_cron"
 echo -e "❇️ Vnstat                  :$status_vnstat"
-echo -e "❇️ L2TP                    :$status_l2tp"
-echo -e "❇️ SSTP                    :$status_sstp"
 echo -e "❇️ XRAYS Vmess TLS         :$status_tls_v2ray"
 echo -e "❇️ XRAYS Vmess None TLS    :$status_nontls_v2ray"
 echo -e "❇️ XRAYS Vless TLS         :$status_tls_vless"
 echo -e "❇️ XRAYS Vless None TLS    :$status_nontls_vless"
 echo -e "❇️ Shadowsocks-OBFS HTTP   :$status_ssh"
-echo -e "❇️ XRAYS Trojan            :$status_virus_trojan"
-echo -e "❇️ Trojan GO               :$status_trgo"
-echo -e "❇️ Wireguard               :$status_wg"
-echo -e "❇️ Websocket TLS           :$swstls"
-echo -e "❇️ Websocket None TLS      :$swsdrop"
-echo -e "❇️ Websocket Ovpn          :$swsovpn"
-echo -e "❇️ SSL / SSH Multiplexer   :$sosslh"
 echo -e "${CYAN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
 echo ""
