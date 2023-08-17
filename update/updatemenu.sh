@@ -72,9 +72,10 @@ wget -O slhost "https://raw.githubusercontent.com/hokagelegend2023/alpha1/main/s
 wget -O sl-download-info "https://raw.githubusercontent.com/hokagelegend2023/alpha1/main/contohinfo/sl-download-info.sh"
 wget -O menuinfo "https://raw.githubusercontent.com/hokagelegend2023/alpha1/main/update/menuinfo.sh"  
 wget -O install-ss-plugin "https://raw.githubusercontent.com/hokagelegend2023/alpha1/main/shadowsocks-plugin/install-ss-plugin.sh"
-
+wget -O info "https://raw.githubusercontent.com/hokagelegend2023/original/main/update/info.sh" 
 chmod +x install-ss-plugin
 chmod +x xray-grpc
+chmod +x info
 chmod +x install-sldns
 chmod +x restart
 chmod +x addssh
