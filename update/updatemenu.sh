@@ -39,7 +39,7 @@ rm -rf menutheme
 rm -rf setmenu
 rm -rf backup
 rm -rf menu-backup
-wget -O menu "https://raw.githubusercontent.com/hokagelegend2023/alpha1/main/update/menu.sh" 
+wget -O menu "https://raw.githubusercontent.com/hokagelegend2023/alpha3/main/menu/menu.sh" 
 wget -O updatemenu "https://raw.githubusercontent.com/hokagelegend2023/alpha1/main/update/updatemenu.sh" 
 wget -O menutheme "https://raw.githubusercontent.com/hokagelegend2023/alpha1/main/update/menutheme.sh"
 wget -O backup "https://raw.githubusercontent.com/hokagelegend2023/alpha1/main/backup/backup.sh"
