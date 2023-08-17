@@ -116,37 +116,6 @@ else
     status_dropbear="${RED}OFF${NC}"
 fi
 
-# // SSH PPTP
-pptp=$( systemctl status pptpd | grep Active | awk '{print $3}' | sed 's/(//g' | sed 's/)//g' )
-if [[ $xray == "running" ]]; then
-    status_pptp="${GREEN}ON${NC}"
-else
-    status_pptp="${RED}OFF${NC}"
-fi
-
-# // SSH SSTP
-sstp=$( systemctl status accel-ppp | grep Active | awk '{print $3}' | sed 's/(//g' | sed 's/)//g' )
-if [[ $sstp == "running" ]]; then
-    status_sstp="${GREEN}ON${NC}"
-else
-    status_sstp="${RED}OFF${NC}"
-fi
-
-# // SSH L2TP
-l2tp=$( systemctl status xl2tpd | grep Active | awk '{print $3}' | sed 's/(//g' | sed 's/)//g' )
-if [[ $l2tp == "running" ]]; then
-    status_l2tp="${GREEN}ON${NC}"
-else
-    status_l2tp="${RED}OFF${NC}"
-fi
-
-# // SSH WIREGUARD
-wg=$( systemctl status wg-quick@wg0 | grep Active | awk '{print $3}' | sed 's/(//g' | sed 's/)//g' )
-if [[ $xray == "running" ]]; then
-    status_wg="${GREEN}ON${NC}"
-else
-    status_wg="${RED}OFF${NC}"
-fi
 
 function add-host(){
 clear
@@ -228,37 +197,32 @@ echo -e "$COLOR1  $NC Current Domain : $(cat /etc/xray/domain)          "
 echo -e "$COLOR1  $NC IP-VPS         : ${COLOR1}$IPVPS${NC}         "
 echo -e "$COLOR1 <<─────────────────────────────────────────────────────>>${NC}"
 echo -e "$COLOR1┌────────────────────────────────────────────────────────┐${NC}"
-echo -e "$COLOR1│$NC [ SSH WS   : ${status_wst} ]  [ XRAY : ${status_xray} ]      [ NGINX : ${status_nginx} ]  $COLOR1│$NC"
+echo -e "$COLOR1│$NC [ SSH WS   : ${status_wst} ]  [ XRAY : ${status_xray} ]      [ NGINX : ${status_nginx} ]   $COLOR1│$NC"
 echo -e "$COLOR1│$NC                                                        $COLOR1│$NC"
-echo -e "$COLOR1│$NC [ SW-SHOCK : ${status_xray} ]  [ DROPBEAR : ${status_dropbear} ]  [ PPTP : ${status_pptp} ]    $COLOR1│$NC"
-echo -e "$COLOR1│$NC                                                        $COLOR1│$NC"
-echo -e "$COLOR1│$NC [ WIREGUARD: ${status_wg} ]  [ L2TP : ${status_l2tp} ]      [ SSTP : ${status_sstp} ]    $COLOR1│$NC"
+echo -e "$COLOR1│$NC [ SW-SHOCK : ${status_xray} ]  [ DROPBEAR : ${status_dropbear} ]                   $COLOR1│$NC"
 echo -e "$COLOR1│$NC                                                        $COLOR1│$NC"
 echo -e "$COLOR1└────────────────────────────────────────────────────────┘${NC}"
-echo -e "$COLOR1┌──────────────────────────────────────────────────────────┐${NC}"
-echo -e "${COLOR1}│  [01]${NC} • SSHWS      [${YELLOW}Menu${NC}]   ${COLOR1}[09]${NC} • PPTP          [${YELLOW}Menu${NC}]  $COLOR1│$NC"   
-echo -e "${COLOR1}│  [02]${NC} • VMESS      [${YELLOW}Menu${NC}]   ${COLOR1}[10]${NC} • BACKUP        [${YELLOW}Menu${NC}]  $COLOR1│$NC"  
-echo -e "${COLOR1}│  [03]${NC} • VLESS      [${YELLOW}Menu${NC}]   ${COLOR1}[11]${NC} • INFO          [${YELLOW}Menu${NC}]  $COLOR1│$NC"  
-echo -e "${COLOR1}│  [04]${NC} • TROJAN     [${YELLOW}Menu${NC}]   ${COLOR1}[12]${NC} • THEME         [${YELLOW}Menu${NC}]  $COLOR1│$NC"  
-echo -e "${COLOR1}│  [05]${NC} • SW-Shock   [${YELLOW}Menu${NC}]   ${COLOR1}[13]${NC} • SETTINGS      [${YELLOW}Menu${NC}]  $COLOR1│$NC"
-echo -e "${COLOR1}│  [06]${NC} • WIREGUARD  [${YELLOW}Menu${NC}]   ${COLOR1}[14]${NC} • INFO          [${YELLOW}Menu${NC}]  $COLOR1│$NC"
-echo -e "${COLOR1}│  [07]${NC} • SSTP       [${YELLOW}Menu${NC}]   ${COLOR1}[15]${NC} • ADD HOST      [${YELLOW}Menu${NC}]  $COLOR1│$NC"
-echo -e "${COLOR1}│  [08]${NC} • L2TP       [${YELLOW}Menu${NC}]   ${COLOR1}[16]${NC} • RENEW CERT    [${YELLOW}Menu${NC}]  $COLOR1│$NC"
-if [ "$Isadmin" = "ON" ]; then
-echo -e "${COLOR1}│                                                          $COLOR1│$NC"
-
+echo -e "$COLOR1┌───────────────────────────────────────────────────────────┐${NC}"
+echo -e "${COLOR1}│  [01]${NC} • SSHWS      [${YELLOW}Menu${NC}]   ${COLOR1}[08]${NC} • ALL SERVICE    [${YELLOW}Menu${NC}]  $COLOR1│$NC"    
+echo -e "${COLOR1}│  [02]${NC} • VMESS      [${YELLOW}Menu${NC}]   ${COLOR1}[09]${NC} • BACKUP         [${YELLOW}Menu${NC}]  $COLOR1│$NC"  
+echo -e "${COLOR1}│  [03]${NC} • VLESS      [${YELLOW}Menu${NC}]   ${COLOR1}[10]${NC} • UPDATE         [${YELLOW}Menu${NC}]  $COLOR1│$NC"  
+echo -e "${COLOR1}│  [04]${NC} • TROJAN     [${YELLOW}Menu${NC}]   ${COLOR1}[11]${NC} • THEME          [${YELLOW}Menu${NC}]  $COLOR1│$NC"  
+echo -e "${COLOR1}│  [05]${NC} • SW-Shock   [${YELLOW}Menu${NC}]   ${COLOR1}[12]${NC} • SETTINGS       [${YELLOW}Menu${NC}]  $COLOR1│$NC"
+echo -e "${COLOR1}│  [06]${NC} • INFO       [${YELLOW}Menu${NC}]   ${COLOR1}[13]${NC} • ADD HOST       [${YELLOW}Menu${NC}]  $COLOR1│$NC"      
+echo -e "${COLOR1}│  [07]${NC} • PROGRAM    [${YELLOW}Menu${NC}]   ${COLOR1}[14]${NC} • RENEW CERT     [${YELLOW}Menu${NC}]  $COLOR1│$NC"      
+if [ "$Isadmin" = "ON" ]; then  
 ressee="menu-ip"
 bottt="menu-bot"
 else
 ressee="menu"
 bottt="menu"
 fi
-echo -e "$COLOR1└──────────────────────────────────────────────────────────┘${NC}"
+echo -e "$COLOR1└───────────────────────────────────────────────────────────┘${NC}"
 myver="$(cat /opt/.ver)"
 
 if [[ $serverV > $myver ]]; then
 echo -e "$RED┌─────────────────────────────────────────────────┐${NC}"
-echo -e "$RED│$NC ${COLOR1}[100]${NC} • UPDATE TO V$serverV" 
+echo -e "$RED│$NC ${COLOR1}[100]${NC} • UPDATE TO V$serverV                          │${NC}"
 echo -e "$RED└─────────────────────────────────────────────────┘${NC}"
 up2u="updatews"
 else
@@ -294,17 +258,15 @@ case $opt in
 03 | 3) clear ; m-vless ;;
 04 | 4) clear ; m-trojan ;;
 05 | 5) clear ; m-ssws ;;
-06 | 6) clear ; wgmenu ;;
-06 | 7) clear ; sstpmenu ;;
-07 | 8) clear ; l2tpmenu ;;
-09 | 9) clear ; pptpmenu ;;
-10 | 10) clear ; menu-backup ;;
-11 | 11) clear ; menuinfo ;;
-12 | 12) clear ; menutheme ;;
-13 | 13) clear ; m-system ;;
-14 | 14) clear ; menuinfo ;;
-15 | 15) clear ; m-domain ;;
-16 | 16) clear ; certv2ray  ;;
+06 | 6) clear ; menuinfo ;;
+06 | 7) clear ; m-system ;;
+07 | 8) clear ; running ;;
+09 | 9) clear ; menu-backup ;;
+10 | 10) clear ; update2 ;;
+11 | 11) clear ; menutheme ;;
+12 | 12) clear ; m-system ;;
+13 | 13) clear ; m-domain ;;
+14 | 14) clear ; certv2ray ;;
 100) clear ; $up2u ;;
 00 | 0) clear ; menu ;;
 *) clear ; menu ;;
