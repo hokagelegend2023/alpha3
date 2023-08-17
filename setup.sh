@@ -197,6 +197,12 @@ wget https://raw.githubusercontent.com/hokagelegend2023/alpha3/main/xray/ins-xra
 clear
 wget https://raw.githubusercontent.com/hokagelegend2023/alpha3/main/sshws/insshws.sh && chmod +x insshws.sh && ./insshws.sh
 clear
+#Instal menu
+echo -e "\e[33m-----------------------------------\033[0m"
+echo -e "$BGreen     Install MENU UPDATE           $NC"
+echo -e "\e[33m-----------------------------------\033[0m"
+sleep 0.5
+clear
 wget https://raw.githubusercontent.com/hokagelegend2023/alpha3/main/update/updatemenu.sh && chmod +x updatemenu.sh && ./updatemenu.sh
 clear
 cat> /root/.profile << END
@@ -287,6 +293,7 @@ echo "" | tee -a log-install.txt
 rm /root/setup.sh >/dev/null 2>&1
 rm /root/ins-xray.sh >/dev/null 2>&1
 rm /root/insshws.sh >/dev/null 2>&1
+rm /root/updatemenu.sh >/dev/null 2>&1
 secs_to_human "$(($(date +%s) - ${start}))" | tee -a log-install.txt
 echo -e ""
 echo " Auto reboot in 10 Seconds "
