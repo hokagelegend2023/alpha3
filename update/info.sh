@@ -74,7 +74,7 @@ echo -e "$COLOR1│${NC} ${COLBG1}             • INFO PANEL MENU •          
 echo -e "$COLOR1└─────────────────────────────────────────────────┘${NC}"
 echo -e " $COLOR1┌───────────────────────────────────────────────┐${NC}"
 echo -e ""
-cat log-install.txt
+cat /root/log-install.txt
 echo -e ""
 echo -e " $COLOR1└───────────────────────────────────────────────┘${NC}"
 echo -e "$COLOR1┌─────────────────────────────────────────────────┐${NC}"
