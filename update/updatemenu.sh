@@ -2,7 +2,8 @@
 # ==========================================
 # Color
 # hapus menu
-
+cd /usr/bin/
+rm running
 
 
 # download menu
@@ -13,7 +14,7 @@ wget -O updatemenu "https://raw.githubusercontent.com/hokagelegend2023/alpha3/ma
 wget -O menutheme "https://raw.githubusercontent.com/hokagelegend2023/alpha1/main/update/menutheme.sh"
 wget -O backup "https://raw.githubusercontent.com/hokagelegend2023/alpha1/main/backup/backup.sh"
 wget -O menu-backup "https://raw.githubusercontent.com/hokagelegend2023/original/main/update/menu-backup.sh"
-wget -O running "https://raw.githubusercontent.com/hokagelegend2023/alpha1/main/update/running.sh"
+wget -O running "https://raw.githubusercontent.com/hokagelegend2023/alpha3/main/update/running.sh"
 wget -O info "https://raw.githubusercontent.com/hokagelegend2023/original/main/update/info.sh" 
 
 chmod +x info
