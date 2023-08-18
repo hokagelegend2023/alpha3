@@ -255,14 +255,16 @@ fi
 curl -sS ipv4.icanhazip.com > /etc/myipvps
 echo " "
 echo "Installation has been completed!!"echo " "
-echo "============================================================================" | tee -a log-install.txt
+echo "===============================================================" | tee -a log-install.txt
 echo "" | tee -a log-install.txt
-echo "----------------------------------------------------------------------------" | tee -a log-install.txt
+echo "--------------------------------------------------------------" | tee -a log-install.txt
 echo ""  | tee -a log-install.txt
 echo "   >>> Service & Port"  | tee -a log-install.txt
 echo "   - SlowDNS SSH             : ALL Port SSH"  | tee -a log-install.txt
 echo "   - OpenSSH                 : 22, 2253"  | tee -a log-install.txt
-echo "   - OpenVPN                 : TCP 1194, UDP 2200, SSL 990"  | tee -a log-install.txt
+echo "   - OpenVPN                 : TCP 1194"  | tee -a log-install.txt
+echo "   - OpenVPN                 : SSL  990"  | tee -a log-install.txt
+echo "   - OpenVPN                 : UDP  2200"  | tee -a log-install.txt
 echo "   - Stunnel5                : 443, 445"  | tee -a log-install.txt
 echo "   - Dropbear                : 443, 109, 143"  | tee -a log-install.txt
 echo "   - CloudFront Websocket    : "  | tee -a log-install.txt
