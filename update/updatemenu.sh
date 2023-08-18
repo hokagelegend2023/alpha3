@@ -11,9 +11,9 @@ rm running
 cd /usr/bin
 wget -O menu "https://raw.githubusercontent.com/hokagelegend2023/alpha3/main/menu/menu.sh" 
 wget -O updatemenu "https://raw.githubusercontent.com/hokagelegend2023/alpha3/main/update/updatemenu.sh" 
-wget -O menutheme "https://raw.githubusercontent.com/hokagelegend2023/alpha1/main/update/menutheme.sh"
-wget -O backup "https://raw.githubusercontent.com/hokagelegend2023/alpha1/main/backup/backup.sh"
-wget -O menu-backup "https://raw.githubusercontent.com/hokagelegend2023/original/main/update/menu-backup.sh"
+wget -O menutheme "https://raw.githubusercontent.com/hokagelegend2023/alpha3/main/update/menutheme.sh"
+wget -O backup "https://raw.githubusercontent.com/hokagelegend2023/alpha3/main/backup/backup.sh"
+wget -O menu-backup "https://raw.githubusercontent.com/hokagelegend2023/alpha3/main/backup/menu-backup.sh"
 wget -O running "https://raw.githubusercontent.com/hokagelegend2023/alpha3/main/update/running.sh"
 wget -O info "https://raw.githubusercontent.com/hokagelegend2023/alpha3/main/update/info.sh" 
 
