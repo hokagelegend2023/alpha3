@@ -15,7 +15,7 @@ wget -O menutheme "https://raw.githubusercontent.com/hokagelegend2023/alpha1/mai
 wget -O backup "https://raw.githubusercontent.com/hokagelegend2023/alpha1/main/backup/backup.sh"
 wget -O menu-backup "https://raw.githubusercontent.com/hokagelegend2023/original/main/update/menu-backup.sh"
 wget -O running "https://raw.githubusercontent.com/hokagelegend2023/alpha3/main/update/running.sh"
-wget -O info "https://raw.githubusercontent.com/hokagelegend2023/original/main/update/info.sh" 
+wget -O info "https://raw.githubusercontent.com/hokagelegend2023/alpha3/main/update/info.sh" 
 
 chmod +x info
 chmod +x restart
