@@ -208,12 +208,6 @@ else
   status_trgo="${RED}  Not Running ${NC}  ( Error )${NC}"
 fi
 
-# STATUS SERVICE L2TP
-if [[ $l2tp_status == "running" ]]; then 
-   status_l2tp=" ${GREEN}Running${NC} ( No Error )${NC}"
-else
-   status_l2tp="${RED}  Not Running${NC}  ( Error )${NC}"
-fi
 
 # STATUS SERVICE DROPBEAR
 if [[ $dropbear_status == "running" ]]; then 
@@ -229,12 +223,6 @@ else
    status_stunnel="${RED}  Not Running ${NC}  ( Error )}"
 fi
 
-# STATUS SERVICE SSTP
-if [[ $sstp_service == "running" ]]; then 
-   status_sstp=" ${GREEN}Running ${NC}( No Error )"
-else
-   status_sstp="${RED}  Not Running ${NC}  ( Error )"
-fi
 
 # STATUS SERVICE WEBSOCKET TLS
 if [[ $wstls == "running" ]]; then
