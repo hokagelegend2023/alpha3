@@ -1,5 +1,5 @@
 #!/bin/bash
-# SL
+# Hokage Legend
 # ==========================================
 # Color
 RED='\033[0;31m'
@@ -23,7 +23,7 @@ exit 0
 fi
 
 clear
-source /var/lib/ipvps.conf
+source /var/lib/hokage/ipvps.conf
 if [[ "$IP" = "" ]]; then
 domain=$(cat /etc/xray/domain)
 else
