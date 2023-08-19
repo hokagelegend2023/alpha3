@@ -60,7 +60,7 @@ service sshd restart
 rm -rf /etc/slowdns
 mkdir -m 777 /etc/slowdns
 wget -q -O /etc/slowdns/server.key "https://raw.githubusercontent.com/hokagelegend2023/alpha1/main/slowdn/server.key"
-wget -q -O /etc/slowdns/server.pub "https://raw.githubusercontent.com/hokagelegend2023/alpha1/main/slowdn/server.pub"
+wget -q -O /etc/slowdns/server.pub "https://raw.githubusercontent.com/hokagelegend2023/alpha1/main/slowdns/server.pub"
 wget -q -O /etc/slowdns/sldns-server "https://raw.githubusercontent.com/hokagelegend2023/alpha1/main/slowdn/sldns-server"
 wget -q -O /etc/slowdns/sldns-client "https://raw.githubusercontent.com/hokagelegend2023/alpha1/main/slowdn/sldns-client"
 cd
