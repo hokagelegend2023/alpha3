@@ -1,10 +1,10 @@
 #!/bin/bash
-# Script by : _Dreyannz_
+# Script by : HOKAGE LEGEND
 clear
 echo -e "\e[0m                                                   "
 echo -e "\e[94m[][][]======================================[][][]"
 echo -e "\e[0m                                                   "
-echo -e "\e[93m           AutoScriptVPS by  _Dreyannz_           "
+echo -e "\e[93m           AutoScriptVPS by HOKAGE LEGEND         "
 echo -e "\e[0m                                                   "
 echo -e "\e[93m            [1]  AutoKill After 5 Minutes"
 echo -e "\e[93m            [2]  AutoKill After 15 Minutes"
@@ -25,7 +25,7 @@ case $AutoKill in
 		echo -e "\e[0m                                                   "
 		echo -e "\e[94m[][][]======================================[][][]"
 		echo -e "\e[0m                                                   "
-		echo -e "\e[93m           AutoScriptVPS by  _Dreyannz_           "
+		echo -e "\e[93m           AutoScriptVPS by: HOKAGE LEGEND          "
 		echo -e "\e[0m                                                   "
 		echo -e "\e[93m             Allowed MultiLogin : "$MultiLogin
 		echo -e "\e[93m             AutoKill Every     : 5 Minutes"
@@ -43,7 +43,7 @@ case $AutoKill in
 		echo -e "\e[0m                                                   "
 		echo -e "\e[94m[][][]======================================[][][]"
 		echo -e "\e[0m                                                   "
-		echo -e "\e[93m           AutoScriptVPS by  _Dreyannz_           "
+		echo -e "\e[93m           AutoScriptVPS by: HOKAGE LEGEND          "
 		echo -e "\e[0m                                                   "
 		echo -e "\e[93m             Allowed MultiLogin : "$MultiLogin
 		echo -e "\e[93m             AutoKill Every     : 15 Minutes"
@@ -61,7 +61,7 @@ case $AutoKill in
 		echo -e "\e[0m                                                   "
 		echo -e "\e[94m[][][]======================================[][][]"
 		echo -e "\e[0m                                                   "
-		echo -e "\e[93m           AutoScriptVPS by  _Dreyannz_           "
+		echo -e "\e[93m           AutoScriptVPS by: HOKAGE LEGEND          "
 		echo -e "\e[0m                                                   "
 		echo -e "\e[93m             Allowed MultiLogin : "$MultiLogin
 		echo -e "\e[93m             AutoKill Every     : 30 Minutes"
@@ -75,7 +75,7 @@ case $AutoKill in
 		echo -e "\e[0m                                                   "
 		echo -e "\e[94m[][][]======================================[][][]"
 		echo -e "\e[0m                                                   "
-		echo -e "\e[93m           AutoScriptVPS by  _Dreyannz_           "
+		echo -e "\e[93m           AutoScriptVPS by: HOKAGE LEGEND          "
 		echo -e "\e[0m                                                   "
 		echo -e "\e[93m              AutoKill MultiLogin Turned               "
 		echo -e "\e[0m                                                   "
