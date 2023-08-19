@@ -44,7 +44,6 @@ case $Restart in
                 /etc/init.d/fail2ban restart
                 /etc/init.d/cron restart
                 /etc/init.d/nginx restart
-                /etc/init.d/squid restart
                 echo -e "[ \033[32mok\033[0m ] Restarting xray Service (via systemctl) "
                 sleep 0.5
                 systemctl restart xray
@@ -57,13 +56,9 @@ case $Restart in
                 sleep 0.5
                 echo -e "[ \033[32mok\033[0m ] Restarting websocket Service (via systemctl) "
                 sleep 0.5
-                systemctl restart sshws.service
-                systemctl restart ws-dropbear.service
-                systemctl restart ws-stunnel.service
                 sleep 0.5
                 echo -e "[ \033[32mok\033[0m ] Restarting Trojan Go Service (via systemctl) "
-                sleep 0.5
-                systemctl restart trojan-go.service 
+                sleep 0.5 
                 sleep 0.5
                 echo -e "[ \033[32mInfo\033[0m ] ALL Service Restarted"
                 echo ""
