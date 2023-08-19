@@ -22,6 +22,7 @@
 - CPU MIN 1 CORE<br>
 - RAM 1GB<br>
 - (Recommendation) Ubuntu 18 / 20 LTS (STABLE to use)
+- Tidak cocok di gunakan untuk UBUNTU 22.0 Banyak Bug Error
 <br>
 
 # Cloudflare settings for those who have their own Domain, you can check at folder [image](https://github.com/givpn/AutoScriptXray/tree/master/image) to display other settings
