@@ -106,5 +106,21 @@ apt update && apt install wget -y && wget -qO- -O udp.sh "https://raw.githubuser
 
 
 
+# Mendapat Hak Asses root :
 
+- Pertama Login VPS
+- kemudian masukan kode perintah di bawah ini
+- sudo su
+- cd
+- nano /etc/ssh/sshd_config
+- ----  PermitRootLogin prohibit-password menjadi PermitRootLogin yes
+
+- ------ PasswordAuthentication no, ubah menjadi PasswordAuthentication yes
+- Simpan file dengan cara tekan Ctrl x lalu y lalu Enter
+- kemudian ganti password akses root dengan memasukan kode di bawah ini
+- passwd
+- Masukan Pasword nya lalu
+- Shell
+- service ssh restart
+- service sshd restart
   
