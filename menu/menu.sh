@@ -237,16 +237,16 @@ datediff() {
 }
 mai="datediff "$Exp" "$DATE""
 
-echo -e "$COLOR1┌─────────────────────────────────────────────────┐$NC"
-echo -e "$COLOR1│$NC Version     :${COLOR1} $(cat /opt/.ver)  Latest Version        $COLOR1│$NC"
-echo -e "$COLOR1│$NC Client Name : $Name                           $COLOR1│$NC"
+echo -e "$COLOR1<<<─────────────────────────────────────────────────>>>$NC"
+echo -e "$COLOR1      ${NC}Version     :${COLOR1} $(cat /opt/.ver)  Latest Version$NC"
+echo -e "$COLOR1      ${NC}Client Name :${COLOR1} $Name$NC"
 if [ $exp \> 1000 ];
 then
-    echo -e "$COLOR1│$NC License     : Lifetime                          $COLOR1│$NC"
+    echo -e "$COLOR1      ${NC}License     :${COLOR1} Lifetime$NC"
 else
     datediff "$Exp" "$DATE"
 fi;
-echo -e "$COLOR1└─────────────────────────────────────────────────┘$NC"
+echo -e "$COLOR1<<<─────────────────────────────────────────────────>>>>$NC"
 echo -e "$COLOR1┌────────────────────── BY ───────────────────────┐${NC}"
 echo -e "$COLOR1│${NC}              • HOKAGE LEGEND •                  $COLOR1│$NC"
 echo -e "$COLOR1└─────────────────────────────────────────────────┘${NC}" 
