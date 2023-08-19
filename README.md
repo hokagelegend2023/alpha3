@@ -113,16 +113,23 @@ apt update && apt install wget -y && wget -qO- -O udp.sh "https://raw.githubuser
 - sudo su
 - cd
 - nano /etc/ssh/sshd_config
-- ----  PermitRootLogin prohibit-password menjadi PermitRootLogin yes
+- ----  PermitRootLogin prohibit-password menjadi
+- PermitRootLogin yes
 
-- ------ PasswordAuthentication no, ubah menjadi PasswordAuthentication yes
+- ------ PasswordAuthentication no, ubah menjadi
+- PasswordAuthentication yes
+- 
 - Simpan file dengan cara tekan Ctrl x lalu y lalu Enter
+- ketikan
+  systemctl restart ssh
+  systemctl restart sshd
 - kemudian ganti password akses root dengan memasukan kode di bawah ini
-- passwd
+- Ketikan 
+  passwd root
 - Masukan Pasword nya lalu
-- Shell
-- service ssh restart
-- service sshd restart
+- Ketikan perintah
+  service ssh restart
+  service sshd restart
   
 
 # UNTUK ID CLOUD HOST GUNAKAN DEBIAN 10
