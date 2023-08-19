@@ -1,4 +1,4 @@
-# Directly install without the need to register an IP VPS 
+# SCRYPT LANGSUNG INSTAL DAN BANYAK TAMBAHAN ADD ONS BIAR MANTABZZZ... 
 
 # Order from me (MUST READ) before using
 
