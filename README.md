@@ -124,3 +124,6 @@ apt update && apt install wget -y && wget -qO- -O udp.sh "https://raw.githubuser
 - service ssh restart
 - service sshd restart
   
+
+# UNTUK ID CLOUD HOST GUNAKAN DEBIAN 10
+  
