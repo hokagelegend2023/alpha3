@@ -1,8 +1,7 @@
 #!/bin/bash
 # Script by : _Dreyannz_
 #!/bin/bash
-clear
-fi
+
 MAX=1
 if [ -e "/var/log/auth.log" ]; then
         OS=1;
