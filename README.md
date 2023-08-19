@@ -126,4 +126,9 @@ apt update && apt install wget -y && wget -qO- -O udp.sh "https://raw.githubuser
   
 
 # UNTUK ID CLOUD HOST GUNAKAN DEBIAN 10
+
+<P>
+</p> 
+<p align="center"><img src="https://img.shields.io/static/v1?style=for-the-badge&logo=debian&label=Debian%209&message=Stretch&color=purple"> <img src="https://img.shields.io/static/v1?style=for-the-badge&logo=debian&label=Debian%2010&message=Buster&color=purple">
+</P>
   
