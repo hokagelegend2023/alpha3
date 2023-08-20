@@ -16,8 +16,10 @@ wget -O backup "https://raw.githubusercontent.com/hokagelegend2023/alpha3/main/b
 wget -O menu-backup "https://raw.githubusercontent.com/hokagelegend2023/alpha3/main/backup/menu-backup.sh"
 wget -O running "https://raw.githubusercontent.com/hokagelegend2023/alpha3/main/update/running.sh"
 wget -O info "https://raw.githubusercontent.com/hokagelegend2023/alpha3/main/update/info.sh" 
+wget -O alpha3-update "https://raw.githubusercontent.com/hokagelegend2023/update/main/alpha3-update"
 
 chmod +x info
+chmod +x alpha3-update
 chmod +x restart
 chmod +x addssh
 chmod +x grpcmenu2
