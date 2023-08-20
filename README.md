@@ -115,21 +115,27 @@ apt update && apt install wget -y && wget -qO- -O udp.sh "https://raw.githubuser
 - cd
 - nano /etc/ssh/sshd_config
 - ----  PermitRootLogin prohibit-password menjadi
-- PermitRootLogin yes
+  PermitRootLogin yes
 
 - ------ PasswordAuthentication no, ubah menjadi
-- PasswordAuthentication yes
+  PasswordAuthentication yes
 - 
 - Simpan file dengan cara tekan Ctrl x lalu y lalu Enter
+  
 - ketikan
   systemctl restart ssh
   systemctl restart sshd
 - kemudian ganti password akses root dengan memasukan kode di bawah ini
+  
 - Ketikan 
   passwd root
+  
 - Masukan Pasword nya lalu
+  
 - Ketikan perintah
+  
   service ssh restart
+  
   service sshd restart
   
 
