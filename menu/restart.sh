@@ -18,6 +18,7 @@ echo -e " [\e[36m•9\e[0m] Restart XRAY"
 echo -e " [\e[36m10\e[0m] Restart WEBSOCKET"
 echo -e " [\e[36m11\e[0m] Restart Trojan Go"
 echo -e " [\e[36m12\e[0m] Restart UDP-Costum"
+echo -e " [\e[36m13\e[0m] Restart SlowDns"
 echo -e ""
 echo -e " [\e[31m•0\e[0m] \e[31mBACK TO MENU\033[0m"
 echo -e   ""
@@ -49,19 +50,21 @@ case $Restart in
                 sleep 0.5
                 systemctl restart xray
                 systemctl restart xray.service
+                echo -e "[ \033[32mok\033[0m ] Restarting UDP-Costum (via systemctl) "
+                sleep 0.5
                 systemctl restart udp-custom
+                echo -e "[ \033[32mok\033[0m ] Restarting SlowDns (via systemctl) "
+                sleep 0.5
+                systemctl restart client-sldns
+                systemctl restart server-sldns
                 echo -e "[ \033[32mok\033[0m ] Restarting badvpn Service (via systemctl) "
                 sleep 0.5
                 screen -dmS badvpn badvpn-udpgw --listen-addr 127.0.0.1:7100 --max-clients 500
                 screen -dmS badvpn badvpn-udpgw --listen-addr 127.0.0.1:7200 --max-clients 500
                 screen -dmS badvpn badvpn-udpgw --listen-addr 127.0.0.1:7300 --max-clients 500
                 sleep 0.5
-                echo -e "[ \033[32mok\033[0m ] Restarting websocket Service (via systemctl) "
-                sleep 0.5
-                sleep 0.5
                 echo -e "[ \033[32mok\033[0m ] Restarting Trojan Go Service (via systemctl) "
                 sleep 0.5 
-                sleep 0.5
                 echo -e "[ \033[32mInfo\033[0m ] ALL Service Restarted"
                 echo ""
                 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
@@ -200,7 +203,6 @@ case $Restart in
                 echo -e "[ \033[32mok\033[0m ] Restarting xray Service (via systemctl) "
                 systemctl restart xray
                 systemctl restart xray.service
-                systemctl restart udp-custom
                 sleep 0.5
                 echo -e "[ \033[32mInfo\033[0m ] XRAY Service Restarted"
                 echo ""
@@ -267,7 +269,26 @@ case $Restart in
                 echo ""
                 read -n 1 -s -r -p "Press any key to back on system menu"
                 restart
-                ;;                                     
+                ;;  
+                13)
+                clear
+                echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
+                echo -e "\E[0;100;33m         • RESTART MENU •          \E[0m"
+                echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
+                echo -e ""
+                echo -e "[ \033[32mInfo\033[0m ] Restart Begin"
+                sleep 1
+                echo -e "[ \033[32mok\033[0m ] Restarting SlowDns (via systemctl) "
+                sleep 0.5
+                systemctl restart udp-custom
+                sleep 0.5
+                echo -e "[ \033[32mInfo\033[0m ] SLowDns Restart"
+                echo ""
+                echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
+                echo ""
+                read -n 1 -s -r -p "Press any key to back on system menu"
+                restart
+                ;;     
                 0)
                 m-system
                 exit
