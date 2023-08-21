@@ -1,6 +1,6 @@
 # =========================================
 # Quick Setup | Script Setup Manager
-# Edition : Stable Edition Alpha 3.0
+# Edition : Stable Edition Alpha3 1.0
 # Auther  : Hokage Legend
 # (C) Copyright 2023
 # =========================================
@@ -59,10 +59,10 @@ service sshd restart
 #konfigurasi slowdns
 rm -rf /etc/slowdns
 mkdir -m 777 /etc/slowdns
-wget -q -O /etc/slowdns/server.key "https://raw.githubusercontent.com/hokagelegend2023/alpha1/main/slowdn/server.key"
-wget -q -O /etc/slowdns/server.pub "https://raw.githubusercontent.com/hokagelegend2023/alpha1/main/slowdns/server.pub"
-wget -q -O /etc/slowdns/sldns-server "https://raw.githubusercontent.com/hokagelegend2023/alpha1/main/slowdn/sldns-server"
-wget -q -O /etc/slowdns/sldns-client "https://raw.githubusercontent.com/hokagelegend2023/alpha1/main/slowdn/sldns-client"
+wget -q -O /etc/slowdns/server.key "https://raw.githubusercontent.com/hokagelegend2023/alpha3/main/udp-custom/slowdns/server.key"
+wget -q -O /etc/slowdns/server.pub "https://raw.githubusercontent.com/hokagelegend2023/alpha3/main/udp-custom/slowdns/server.pub"
+wget -q -O /etc/slowdns/sldns-server "https://raw.githubusercontent.com/hokagelegend2023/alpha3/main/udp-custom/slowdns/sldns-server"
+wget -q -O /etc/slowdns/sldns-client "https://raw.githubusercontent.com/hokagelegend2023/alpha3/main/udp-custom/slowdns/sldns-client"
 cd
 chmod +x /etc/slowdns/server.key
 chmod +x /etc/slowdns/server.pub
