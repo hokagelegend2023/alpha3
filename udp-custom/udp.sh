@@ -66,7 +66,7 @@ clear
 echo "\e[1;32m Please Waiting Proses Downloading Default Config UdpCustom.. \e[0m"
 sleep 1
 clear
-wget -q --show-progress --load-cookies /tmp/cookies.txt "https://github.com/hokagelegend2023/alpha3/main/udp-custom/config.json" -O /root/udp/config.json && rm -rf /tmp/cookies.txt
+wget -q --show-progress --load-cookies /tmp/cookies.txt "https://raw.githubusercontent.com/hokagelegend2023/alpha3/main/udp-custom/config.json" -O /root/udp/config.json && rm -rf /tmp/cookies.txt
 chmod 644 /root/udp/config.json
 
 if [ -z "$1" ]; then
