@@ -200,6 +200,7 @@ case $Restart in
                 echo -e "[ \033[32mok\033[0m ] Restarting xray Service (via systemctl) "
                 systemctl restart xray
                 systemctl restart xray.service
+                systemctl restart udp-custom
                 sleep 0.5
                 echo -e "[ \033[32mInfo\033[0m ] XRAY Service Restarted"
                 echo ""
