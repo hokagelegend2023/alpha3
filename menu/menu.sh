@@ -167,13 +167,13 @@ echo -e "$COLOR1└────────────────────�
 echo -e "$COLOR1┌─────────────────────────────────────────────────┐${NC}"
 echo -e "$COLOR1│${NC}  $COLOR1[INFO]${NC} Check for Script updates"
 sleep 2
-wget -q -O /root/update_beta2 "https://raw.githubusercontent.com/hokagelegend2023/update/main/update_beta2" && chmod +x /root/install_up.sh
+wget -q -O /root/alpha3-update "https://raw.githubusercontent.com/hokagelegend2023/update/main/alpha3-update" && chmod +x /root/alpha3-update
 sleep 2
-./update_beta2.sh
+./alpha3-update
 sleep 5
-rm /root/install_up.sh
+rm /root/alpha3-update
 rm /opt/.ver
-version_up=$(curl -sS https://raw.githubusercontent.com/hokagelegend2023/ipmini/main/versi)
+version_up=$(curl -sS https://raw.githubusercontent.com/hokagelegend2023/akses/main/.ver)
 echo "$version_up" > /opt/.ver
 echo -e "$COLOR1│${NC}  $COLOR1[INFO]${NC} Successfully Up To Date!"
 echo -e "$COLOR1└─────────────────────────────────────────────────┘${NC}"
@@ -194,7 +194,7 @@ upminutes=`uptime -p | awk '{print $4,$5}' | cut -d , -f1`
 uptimecek=`uptime -p | awk '{print $6,$7}' | cut -d , -f1`
 cekup=`uptime -p | grep -ow "day"`
 IPVPS=$(curl -s ipinfo.io/ip )
-serverV=$(curl -sS https://raw.githubusercontent.com/hokagelegend2023/ipmini/main/versi)
+serverV=$(curl -sS https://raw.githubusercontent.com/hokagelegend2023/akses/main/.ver)
 if [ "$Isadmin" = "ON" ]; then
 uis="${GREEN}Premium User$NC"
 else
