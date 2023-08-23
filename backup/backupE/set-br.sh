@@ -41,7 +41,7 @@ logfile ~/.msmtp.log
 EOF
 chown -R www-data:www-data /etc/msmtprc
 cd /usr/bin
-wget -O autobackup https://raw.githubusercontent.com/hokagelegend2023/alpha3/main/backup/backupE/autobackup.sh"
+wget -O autobackup "https://raw.githubusercontent.com/hokagelegend2023/alpha3/main/backup/backupE/autobackup.sh"
 wget -O backupe "https://raw.githubusercontent.com/hokagelegend2023/alpha3/main/backup/backupE/backupe.sh"
 wget -O restore "https://raw.githubusercontent.com/hokagelegend2023/alpha3/main/backup/backupE/restore.sh"
 wget -O strt "https://raw.githubusercontent.com/hokagelegend2023/alpha3/main/backup/backupE/strt.sh"
