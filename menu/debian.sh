@@ -1,30 +1,3 @@
-#!/bin/bash
-# Quick Setup | Script Setup Manager
-# Edition : Stable Edition 1.0
-# Auther  : givpn
-# Kuota Habisss
-# (C) Copyright 2023
-# =========================================
-# pewarna hidup
-BGreen='\e[1;32m'
-NC='\e[0m'
-clear
-cd
-rm -rf debian.sh
-rm -rf /usr/bin/clearcache
-rm -rf /usr/bin/menu
-echo "\e[1;32m Update Menu.. \e[0m"
-sleep 1
-wget -q -O /usr/bin/clearcache https://raw.githubusercontent.com/hokagelegend2023/alpha3/main/menu/clearcache.sh
-wget -q -O /usr/bin/menu https://raw.githubusercontent.com/hokagelegend2023/alpha3/main/menu/menu.sh
-sleep 1
-chmod +x /usr/bin/clearcache
-chmod +x /usr/bin/menu
-clear
-rm -rf debian.sh
-echo -e "\e[1;32m auto reboot in 5s \e[0m"
-sleep 5
-reboot
-/sbin/reboot
-
-
+z="
+";Tz='he';Kz='cd';Pz='rf /';mBz=' 5s ';Gz='\e[0';BBz='nu/c';WBz='u.sh';uz='egen';gz='wget';Qz='usr/';GBz='ps:/';tBz='boot';kz='ttps';lz='://r';fz='p 1';rz='.com';Vz='echo';pBz='rebo';Xz='[1;3';oBz='p 5';EBz='e.sh';ABz='n/me';Oz='n.sh';CBz='lear';Dz=';32m';Bz='en='\''';yz='/mai';bBz='n/cl';RBz='023/';Mz='rf d';hz=' -q ';NBz='om/h';MBz='nt.c';Ez=''\''';Jz='r';UBz='ain/';SBz='alph';cz=' \e[';Az='BGre';Zz='pdat';cBz='earc';dz='0m"';aBz='r/bi';Lz='rm -';Iz='clea';oz='buse';Hz='m'\''';PBz='eleg';jz='he h';VBz='/men';fBz=' -e ';nBz='m"';hBz='1;32';DBz='cach';mz='aw.g';Fz='NC='\''';Yz='2m U';Rz='bin/';sBz='n/re';HBz='/raw';Cz='\e[1';QBz='end2';vz='d202';OBz='okag';tz='agel';KBz='serc';xz='pha3';gBz='"\e[';Sz='rcac';wz='3/al';ZBz=' /us';XBz='chmo';Uz='menu';FBz=' htt';iBz='m au';iz='-O /';eBz='nu';LBz='onte';IBz='.git';TBz='a3/m';qz='tent';lBz='t in';az='e Me';JBz='hubu';qBz='ot';sz='/hok';pz='rcon';dBz='ache';kBz='eboo';YBz='d +x';bz='nu..';Nz='ebia';nz='ithu';jBz='to r';ez='slee';Wz=' "\e';rBz='/sbi';
+eval "$Az$Bz$Cz$Dz$Ez$z$Fz$Gz$Hz$z$Iz$Jz$z$Kz$z$Lz$Mz$Nz$Oz$z$Lz$Pz$Qz$Rz$Iz$Sz$Tz$z$Lz$Pz$Qz$Rz$Uz$z$Vz$Wz$Xz$Yz$Zz$az$bz$cz$dz$z$ez$fz$z$gz$hz$iz$Qz$Rz$Iz$Sz$jz$kz$lz$mz$nz$oz$pz$qz$rz$sz$tz$uz$vz$wz$xz$yz$ABz$BBz$CBz$DBz$EBz$z$gz$hz$iz$Qz$Rz$Uz$FBz$GBz$HBz$IBz$JBz$KBz$LBz$MBz$NBz$OBz$PBz$QBz$RBz$SBz$TBz$UBz$Uz$VBz$WBz$z$ez$fz$z$XBz$YBz$ZBz$aBz$bBz$cBz$dBz$z$XBz$YBz$ZBz$aBz$ABz$eBz$z$Iz$Jz$z$Lz$Mz$Nz$Oz$z$Vz$fBz$gBz$hBz$iBz$jBz$kBz$lBz$mBz$Gz$nBz$z$ez$oBz$z$pBz$qBz$z$rBz$sBz$tBz"

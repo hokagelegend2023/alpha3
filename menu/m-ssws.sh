@@ -1,32 +1,3 @@
-#!/bin/bash
-MYIP=$(wget -qO- ipv4.icanhazip.com);
-echo "Checking VPS"
-clear
-echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
-echo -e "\E[0;100;33m      • Shadowsocks Account •          \E[0m"
-echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
-echo -e ""
-echo -e " [\e[36m•1\e[0m] Create Account Shadowsocks "
-echo -e " [\e[36m•2\e[0m] Create Trial Shadowsocks "
-echo -e " [\e[36m•3\e[0m] Extending Account Shadowsocks "
-echo -e " [\e[36m•4\e[0m] Delete Account Shadowsocks "
-echo -e " [\e[36m•5\e[0m] User list created Account "
-echo -e ""
-echo -e " [\e[31m•0\e[0m] \e[31mBACK TO MENU\033[0m"
-echo -e   ""
-echo -e   "Press x or [ Ctrl+C ] • To-Exit"
-echo ""
-echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
-echo -e ""
-read -p " Select menu : " opt
-echo -e ""
-case $opt in
-1) clear ; add-ssws ;;
-2) clear ; trialssws ;;
-3) clear ; renew-ssws ;;
-4) clear ; del-ssws ;;
-5) clear ; cat /etc/log-create-shadowsocks.log ; exit ;;
-0) clear ; menu ;;
-x) exit ;;
-*) echo "salah tekan" ; sleep 1 ; m-ssws ;;
-esac
+z="
+";vz='al S';nCz='slee';Uz='━━━━';Tz='33m━';wz='hado';YBz=' TO ';oBz=' -p ';jCz='"sal';nBz='read';oz='m•1\';yz='ks "';sBz='u : ';hCz='*) e';VCz='etc/';iCz='cho ';ECz=';;';qz='] Cr';Qz='r';LBz='] De';dz=' Sha';rz='eate';Wz='33[0';Fz='4.ic';EBz='Acco';SBz='ted ';uBz='t';CCz='dd-s';BCz=' ; a';TCz=' ; c';BBz='] Ex';FCz='2) c';mBz=' ""';HBz='owso';NCz='-ssw';qBz='lect';jBz=' • T';GBz='Shad';pCz='; m-';Zz='0;10';XCz='te-s';ABz='m•3\';gCz='xit ';uz=' Tri';eCz='enu ';fCz='x) e';xz='wsoc';DCz='sws ';dCz=' ; m';bCz='t ;;';dBz='  "P';QBz='ist ';Nz='ng V';Vz='━━\0';cCz='0) c';Jz=';';mz='" [\';YCz='ks.l';Pz='clea';TBz='e[31';fBz=' x o';az='0;33';eBz='ress';hBz='Ctrl';UBz='m•0\';Ez=' ipv';ZCz='og ;';ZBz='MENU';WCz='log-';lz='""';PCz='4) c';kCz='ah t';PBz='er l';Rz=' -e ';Kz='echo';tBz='" op';Mz='ecki';mCz='" ; ';Bz='=$(w';aBz='\033';ICz='ssws';bBz='[0m"';RBz='crea';cz='   •';oCz='p 1 ';HCz='rial';yBz='1) c';FBz='unt ';iz=' •  ';MCz='enew';Yz='"\E[';bz='m   ';nz='e[36';qCz='esac';jz='    ';gBz='r [ ';fz='ocks';Oz='PS"';Cz='get ';sz=' "';JCz=' ;;';KBz='m•4\';KCz='3) c';iBz='+C ]';cBz='  ""';NBz='m•5\';Az='MYIP';XBz='BACK';GCz=' ; t';kz='\E[0';lBz='it"';gz=' Acc';IBz='cks ';UCz='at /';hz='ount';ACz='lear';Gz='anha';QCz=' ; d';WBz='[31m';Hz='zip.';CBz='tend';SCz='5) c';Lz=' "Ch';MBz='lete';kBz='o-Ex';LCz=' ; r';RCz='el-s';DBz='ing ';aCz=' exi';Iz='com)';pz='e[0m';Sz='"\e[';tz='m•2\';lCz='ekan';pBz='" Se';Dz='-qO-';OCz='s ;;';JBz='"';OBz='] Us';VBz='] \e';ez='dows';Xz='m"';xBz='t in';vBz='case';rBz=' men';wBz=' $op';
+eval "$Az$Bz$Cz$Dz$Ez$Fz$Gz$Hz$Iz$Jz$z$Kz$Lz$Mz$Nz$Oz$z$Pz$Qz$z$Kz$Rz$Sz$Tz$Uz$Uz$Uz$Uz$Uz$Uz$Uz$Uz$Vz$Wz$Xz$z$Kz$Rz$Yz$Zz$az$bz$cz$dz$ez$fz$gz$hz$iz$jz$jz$kz$Xz$z$Kz$Rz$Sz$Tz$Uz$Uz$Uz$Uz$Uz$Uz$Uz$Uz$Vz$Wz$Xz$z$Kz$Rz$lz$z$Kz$Rz$mz$nz$oz$pz$qz$rz$gz$hz$dz$ez$fz$sz$z$Kz$Rz$mz$nz$tz$pz$qz$rz$uz$vz$wz$xz$yz$z$Kz$Rz$mz$nz$ABz$pz$BBz$CBz$DBz$EBz$FBz$GBz$HBz$IBz$JBz$z$Kz$Rz$mz$nz$KBz$pz$LBz$MBz$gz$hz$dz$ez$fz$sz$z$Kz$Rz$mz$nz$NBz$pz$OBz$PBz$QBz$RBz$SBz$EBz$FBz$JBz$z$Kz$Rz$lz$z$Kz$Rz$mz$TBz$UBz$pz$VBz$WBz$XBz$YBz$ZBz$aBz$bBz$z$Kz$Rz$cBz$z$Kz$Rz$dBz$eBz$fBz$gBz$hBz$iBz$jBz$kBz$lBz$z$Kz$mBz$z$Kz$Rz$Sz$Tz$Uz$Uz$Uz$Uz$Uz$Uz$Uz$Uz$Vz$Wz$Xz$z$Kz$Rz$lz$z$nBz$oBz$pBz$qBz$rBz$sBz$tBz$uBz$z$Kz$Rz$lz$z$vBz$wBz$xBz$z$yBz$ACz$BCz$CCz$DCz$ECz$z$FCz$ACz$GCz$HCz$ICz$JCz$z$KCz$ACz$LCz$MCz$NCz$OCz$z$PCz$ACz$QCz$RCz$DCz$ECz$z$SCz$ACz$TCz$UCz$VCz$WCz$RBz$XCz$wz$xz$YCz$ZCz$aCz$bCz$z$cCz$ACz$dCz$eCz$ECz$z$fCz$gCz$ECz$z$hCz$iCz$jCz$kCz$lCz$mCz$nCz$oCz$pCz$ICz$JCz$z$qCz"

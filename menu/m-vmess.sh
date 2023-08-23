@@ -1,34 +1,3 @@
-#!/bin/bash
-MYIP=$(wget -qO- ipv4.icanhazip.com);
-echo "Checking VPS"
-clear
-echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
-echo -e "\E[0;100;33m       • VMESS MENU •         \E[0m"
-echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
-echo -e ""
-echo -e " [\e[36m•1\e[0m] Create Account Vmess "
-echo -e " [\e[36m•2\e[0m] Trial Account Vmess "
-echo -e " [\e[36m•3\e[0m] Extending Account Vmess "
-echo -e " [\e[36m•4\e[0m] Delete Account Vmess "
-echo -e " [\e[36m•5\e[0m] Check User Login Vmess "
-echo -e " [\e[36m•6\e[0m] User list created Account "
-echo -e ""
-echo -e " [\e[31m•0\e[0m] \e[31mBACK TO MENU\033[0m"
-echo -e ""
-echo -e   "Press x or [ Ctrl+C ] • To-Exit"
-echo ""
-echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
-echo -e ""
-read -p " Select menu :  "  opt
-echo -e ""
-case $opt in
-1) clear ; add-ws ; exit ;;
-2) clear ; trialvmess ; exit ;;
-3) clear ; renew-ws ; exit ;;
-4) clear ; del-ws ; exit ;;
-5) clear ; cek-ws ; exit ;;
-6) clear ; cat /etc/log-create-vmess.log ; exit ;;
-0) clear ; menu ; exit ;;
-x) exit ;;
-*) echo "Anda salah tekan " ; sleep 1 ; m-sshovpn ;;
-esac
+z="
+";yBz='case';qBz='read';NCz='3) c';Uz='━━━━';XCz=' ; c';UCz=' ; d';lCz='x) e';yz='Acco';qz='eate';ez='ESS ';QCz='-ws ';RCz='; ex';Oz='PS"';SCz='it ;';GBz='ing ';RBz=' "';XBz='ted ';KBz='m•5\';PCz='enew';oBz='it"';PBz='in V';jBz='r [ ';Tz='33m━';WCz='5) c';WBz='crea';eCz='.log';BBz='Vmes';oCz='"And';pCz='a sa';aBz='] \e';eBz='\033';uCz='eep ';ZCz='6) c';tz=' Vme';tBz='lect';xBz='opt';VCz='el-w';Rz=' -e ';OBz=' Log';Dz='-qO-';dCz='te-v';dBz=' TO ';JCz='2) c';Yz='"\E[';TCz='4) c';EBz='] Ex';lBz='+C ]';dz='• VM';mz='e[36';wBz=' "  ';QBz='mess';tCz='; sl';sz='ount';az='0;33';Jz=';';uBz=' men';wz='] Tr';sCz='n " ';sBz='" Se';Az='MYIP';LBz='] Ch';JBz='lete';rBz=' -p ';Ez=' ipv';Bz='=$(w';xz='ial ';Pz='clea';nz='m•1\';bBz='[31m';ABz='unt ';rz=' Acc';TBz='] Us';iz='E[0m';UBz='er l';SBz='m•6\';HCz='exit';ZBz='m•0\';kCz='enu ';iCz='0) c';cCz='log-';vCz='1 ; ';Qz='r';NBz='User';xCz='hovp';kz='""';jz='"';iBz=' x o';nBz='o-Ex';FBz='tend';Wz='33[0';qCz='lah ';MCz='vmes';kBz='Ctrl';bCz='etc/';Gz='anha';YCz='ek-w';nCz='cho ';lz='" [\';mBz=' • T';DCz='lear';GCz='s ; ';ACz=' $op';CBz='s "';gz=' •  ';rCz='teka';ECz=' ; a';gCz='xit ';aCz='at /';YBz='e[31';Kz='echo';yCz='n ;;';fBz='[0m"';bz='m   ';fCz=' ; e';Iz='com)';Lz=' "Ch';cBz='BACK';VBz='ist ';LCz='rial';Cz='get ';gBz='  "P';vBz='u : ';BCz='t in';jCz=' ; m';fz='MENU';Sz='"\e[';pBz=' ""';CCz='1) c';hCz=';;';pz='] Cr';hz='   \';DBz='m•3\';Vz='━━\0';hBz='ress';FCz='dd-w';oz='e[0m';HBz='m•4\';OCz=' ; r';ADz='esac';Hz='zip.';Zz='0;10';KCz=' ; t';Mz='ecki';uz='ss "';Xz='m"';cz='    ';Nz='ng V';IBz='] De';MBz='eck ';Fz='4.ic';mCz='*) e';ICz=' ;;';wCz='m-ss';vz='m•2\';
+eval "$Az$Bz$Cz$Dz$Ez$Fz$Gz$Hz$Iz$Jz$z$Kz$Lz$Mz$Nz$Oz$z$Pz$Qz$z$Kz$Rz$Sz$Tz$Uz$Uz$Uz$Uz$Uz$Uz$Uz$Uz$Vz$Wz$Xz$z$Kz$Rz$Yz$Zz$az$bz$cz$dz$ez$fz$gz$cz$hz$iz$jz$z$Kz$Rz$Sz$Tz$Uz$Uz$Uz$Uz$Uz$Uz$Uz$Uz$Vz$Wz$Xz$z$Kz$Rz$kz$z$Kz$Rz$lz$mz$nz$oz$pz$qz$rz$sz$tz$uz$z$Kz$Rz$lz$mz$vz$oz$wz$xz$yz$ABz$BBz$CBz$z$Kz$Rz$lz$mz$DBz$oz$EBz$FBz$GBz$yz$ABz$BBz$CBz$z$Kz$Rz$lz$mz$HBz$oz$IBz$JBz$rz$sz$tz$uz$z$Kz$Rz$lz$mz$KBz$oz$LBz$MBz$NBz$OBz$PBz$QBz$RBz$z$Kz$Rz$lz$mz$SBz$oz$TBz$UBz$VBz$WBz$XBz$yz$ABz$jz$z$Kz$Rz$kz$z$Kz$Rz$lz$YBz$ZBz$oz$aBz$bBz$cBz$dBz$fz$eBz$fBz$z$Kz$Rz$kz$z$Kz$Rz$gBz$hBz$iBz$jBz$kBz$lBz$mBz$nBz$oBz$z$Kz$pBz$z$Kz$Rz$Sz$Tz$Uz$Uz$Uz$Uz$Uz$Uz$Uz$Uz$Vz$Wz$Xz$z$Kz$Rz$kz$z$qBz$rBz$sBz$tBz$uBz$vBz$wBz$xBz$z$Kz$Rz$kz$z$yBz$ACz$BCz$z$CCz$DCz$ECz$FCz$GCz$HCz$ICz$z$JCz$DCz$KCz$LCz$MCz$GCz$HCz$ICz$z$NCz$DCz$OCz$PCz$QCz$RCz$SCz$Jz$z$TCz$DCz$UCz$VCz$GCz$HCz$ICz$z$WCz$DCz$XCz$YCz$GCz$HCz$ICz$z$ZCz$DCz$XCz$aCz$bCz$cCz$WBz$dCz$QBz$eCz$fCz$gCz$hCz$z$iCz$DCz$jCz$kCz$RCz$SCz$Jz$z$lCz$gCz$hCz$z$mCz$nCz$oCz$pCz$qCz$rCz$sCz$tCz$uCz$vCz$wCz$xCz$yCz$z$ADz"
