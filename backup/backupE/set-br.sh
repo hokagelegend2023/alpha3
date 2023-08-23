@@ -42,12 +42,12 @@ EOF
 chown -R www-data:www-data /etc/msmtprc
 cd /usr/bin
 wget -O autobackup https://raw.githubusercontent.com/hokagelegend2023/alpha3/main/backup/backupE/autobackup.sh"
-wget -O backup "https://raw.githubusercontent.com/hokagelegend2023/alpha3/main/backup/backupE/backupe.sh"
+wget -O backupe "https://raw.githubusercontent.com/hokagelegend2023/alpha3/main/backup/backupE/backupe.sh"
 wget -O restore "https://raw.githubusercontent.com/hokagelegend2023/alpha3/main/backup/backupE/restore.sh"
 wget -O strt "https://raw.githubusercontent.com/hokagelegend2023/alpha3/main/backup/backupE/strt.sh"
 wget -O limitspeed "https://raw.githubusercontent.com/hokagelegend2023/alpha3/main/backup/backupE/limitspeed.sh"
 chmod +x autobackup
-chmod +x backup
+chmod +x backupe
 chmod +x restore
 chmod +x strt
 chmod +x limitspeed
