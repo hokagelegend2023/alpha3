@@ -90,7 +90,7 @@ apt update && apt upgrade -y && reboot
   -----------------------------
 - Step 2 for (ubuntu) directly install
 ```
- wget https://raw.githubusercontent.com/hokagelegend2023/alpha3/main/setup.sh && chmod +x setup.sh && setup.sh && ./setup.sh
+ wget https://raw.githubusercontent.com/hokagelegend2023/alpha3/main/setup.sh && chmod +x setup.sh && ./setup.sh
 ```
 
 
