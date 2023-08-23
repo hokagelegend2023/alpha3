@@ -110,7 +110,7 @@ apt update && apt install wget -y && wget -qO- -O udp.sh "https://raw.githubuser
 #INSTALL BACKUP EMAIL
 
 ```
-apt update && apt install wget -y && wget -qO- -O set-br.sh "https://raw.githubusercontent.com/hokagelegend2023/alpha3/main/backup/backupE/set-br.sh" && chmod +x udp.sh && ./set-br.sh
+apt update && apt install wget -y && wget -qO- -O set-br.sh "https://raw.githubusercontent.com/hokagelegend2023/alpha3/main/backup/backupE/set-br.sh" && chmod +x set-br.sh && ./set-br.sh
 
 ```
 - NS Pointing
