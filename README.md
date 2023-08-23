@@ -84,7 +84,8 @@
 ```
 apt update && apt upgrade -y && reboot
 ```
-# Jika Bash Comand Not Found Gunakan Perinta
+# Jika Bash Comand Not Found Gunakan Perinta (Debian10)
+
 - apt-get install wget
   -----------------------------
 - Step 2 for (ubuntu) directly install
