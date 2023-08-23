@@ -220,14 +220,14 @@ echo -e "$COLOR1│$NC                                                          
 echo -e "$COLOR1│$NC [ UDP-COSTUM : ${status_udp} ]  [ GRPC : ${status_xray} ]      [ RUNNING : ${status_sldns} ]  $COLOR1│$NC"
 echo -e "$COLOR1│$NC                                                          $COLOR1│$NC"
 echo -e "$COLOR1└──────────────────────────────────────────────────────────┘${NC}"
-echo -e "$COLOR1┌───────────────────────────────────────────────────────────┐${NC}"
-echo -e "${COLOR1}│  [01]${NC} • SSHWS      [${YELLOW}Menu${NC}]   ${COLOR1}[08]${NC} • ALL SERVICE    [${YELLOW}Menu${NC}]  $COLOR1│$NC"    
-echo -e "${COLOR1}│  [02]${NC} • VMESS      [${YELLOW}Menu${NC}]   ${COLOR1}[09]${NC} • BACKUP         [${YELLOW}Menu${NC}]  $COLOR1│$NC"  
-echo -e "${COLOR1}│  [03]${NC} • VLESS      [${YELLOW}Menu${NC}]   ${COLOR1}[10]${NC} • UPDATE         [${YELLOW}Menu${NC}]  $COLOR1│$NC"  
-echo -e "${COLOR1}│  [04]${NC} • TROJAN     [${YELLOW}Menu${NC}]   ${COLOR1}[11]${NC} • THEME          [${YELLOW}Menu${NC}]  $COLOR1│$NC"  
-echo -e "${COLOR1}│  [05]${NC} • SW-Shock   [${YELLOW}Menu${NC}]   ${COLOR1}[12]${NC} • SETTINGS       [${YELLOW}Menu${NC}]  $COLOR1│$NC"
-echo -e "${COLOR1}│  [06]${NC} • INFO       [${YELLOW}Menu${NC}]   ${COLOR1}[13]${NC} • ADD HOST       [${YELLOW}Menu${NC}]  $COLOR1│$NC"      
-echo -e "${COLOR1}│  [07]${NC} • PROGRAM    [${YELLOW}Menu${NC}]   ${COLOR1}[14]${NC} • RENEW CERT     [${YELLOW}Menu${NC}]  $COLOR1│$NC"      
+echo -e "$COLOR1┌─────────────────────────────────────────────────────────────┐${NC}"
+echo -e "${COLOR1}│  [01]${NC} • SSHWS        [${YELLOW}Menu${NC}]   ${COLOR1}[08]${NC} • ALL SERVICE    [${YELLOW}Menu${NC}]  $COLOR1│$NC"    
+echo -e "${COLOR1}│  [02]${NC} • VMESS        [${YELLOW}Menu${NC}]   ${COLOR1}[09]${NC} • BACKUP GIT     [${YELLOW}Menu${NC}]  $COLOR1│$NC"  
+echo -e "${COLOR1}│  [03]${NC} • VLESS        [${YELLOW}Menu${NC}]   ${COLOR1}[10]${NC} • UPDATE         [${YELLOW}Menu${NC}]  $COLOR1│$NC"  
+echo -e "${COLOR1}│  [04]${NC} • TROJAN       [${YELLOW}Menu${NC}]   ${COLOR1}[11]${NC} • THEME          [${YELLOW}Menu${NC}]  $COLOR1│$NC"  
+echo -e "${COLOR1}│  [05]${NC} • SW-Shock     [${YELLOW}Menu${NC}]   ${COLOR1}[12]${NC} • SETTINGS       [${YELLOW}Menu${NC}]  $COLOR1│$NC"
+echo -e "${COLOR1}│  [06]${NC} • INFO         [${YELLOW}Menu${NC}]   ${COLOR1}[13]${NC} • ADD HOST       [${YELLOW}Menu${NC}]  $COLOR1│$NC"      
+echo -e "${COLOR1}│  [07]${NC} • BACKUP EMAIL [${YELLOW}Menu${NC}]   ${COLOR1}[14]${NC} • RENEW CERT     [${YELLOW}Menu${NC}]  $COLOR1│$NC"      
 if [ "$Isadmin" = "ON" ]; then  
 ressee="menu-ip"
 bottt="menu-bot"
@@ -235,7 +235,7 @@ else
 ressee="menu"
 bottt="menu"
 fi
-echo -e "$COLOR1└───────────────────────────────────────────────────────────┘${NC}"
+echo -e "$COLOR1└─────────────────────────────────────────────────────────────┘${NC}"
 myver="$(cat /opt/.ver)"
 
 if [[ $serverV > $myver ]]; then
