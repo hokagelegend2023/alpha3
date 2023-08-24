@@ -62,6 +62,11 @@
 - Trojan gRPC              : 443<br>
 - Shadowsocks gRPC         : 443<br>
 <br>
+
+<p align="center">
+<img src="https://github.com/hokagelegend2023/alpha3/blob/a3eb05b76b19ee8186636031f3b916f4da5b8de8/PORT%20READY.jpg"> 
+</p>
+
   
 ## Feature
 - Speedtest® by [Ookla®](https://speedtest.net)
