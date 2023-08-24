@@ -225,7 +225,7 @@ echo -e "$COLOR1│$NC [ SSH WS   : ${status_wst} ]    [ XRAY : ${status_xray} ]
 echo -e "$COLOR1│$NC                                                          $COLOR1│$NC"
 echo -e "$COLOR1│$NC [ SW-SHOCK : ${status_xray} ]    [ DROPBEAR : ${status_dropbear} ]  [ Slow DNS : ${status_sldns} ]$COLOR1│$NC"
 echo -e "$COLOR1│$NC                                                          $COLOR1│$NC"
-echo -e "$COLOR1│$NC [ UDP-COSTUM : ${status_udp} ]  [ GRPC : ${status_xray} ]     [ OPEN VPN : ${status_openvpn} ]$COLOR1│$NC"
+echo -e "$COLOR1│$NC [ UDP-COSTUM : ${status_udp} ]  [ GRPC : ${status_xray} ]     [ OPEN VPN : ${status_openvpn} ] $COLOR1│$NC"
 echo -e "$COLOR1│$NC                                                          $COLOR1│$NC"
 echo -e "$COLOR1└──────────────────────────────────────────────────────────┘${NC}"
 echo -e "$COLOR1┌─────────────────────────────────────────────────────────────┐${NC}"
