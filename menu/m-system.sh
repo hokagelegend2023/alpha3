@@ -14,7 +14,7 @@ MYIP=$(wget -qO- ipv4.icanhazip.com);
 echo "Checking VPS"
 clear
 echo -e "$COLOR1┌─────────────────────────────────────────────────┐${NC}"
-echo -e "$COLOR1│${NC} ${COLBG1}             • SYSTEM MENU •                ${NC} $COLOR1│$NC"
+echo -e "$COLOR1│${NC} ${COLBG1}             • SYSTEM MENU •                   ${NC} $COLOR1│$NC"
 echo -e "$COLOR1└─────────────────────────────────────────────────┘${NC}"
 echo -e ""
 echo -e "${COLOR1} [01]${NC} Panel Domain          $NC" 
