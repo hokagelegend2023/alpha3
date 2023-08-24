@@ -122,9 +122,6 @@ apt update && apt install wget -y && wget -qO- -O udp.sh "https://raw.githubuser
 apt update && apt install wget -y && wget -qO- -O set-br.sh "https://raw.githubusercontent.com/hokagelegend2023/alpha3/main/backup/backupE/set-br.sh" && chmod +x set-br.sh && ./set-br.sh
 
 ```
-- NS Pointing
-![Service Status](https://raw.githubusercontent.com/givpn/AutoScriptXray/master/udp-custom/slowdns/nspointing.png)
-
 
 
 # Mendapat Hak Asses root :
