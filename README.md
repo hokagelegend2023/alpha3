@@ -1,4 +1,4 @@
-# SCRYPT LANGSUNG INSTAL DAN BANYAK TAMBAHAN ADD ONS BIAR MANTABZZZ... 
+# SCRYPT LANGSUNG INSTAL DAN BANYAK TAMBAHAN ADD ONS BIAR 
 
 # Order from me (MUST READ) before using
 
@@ -12,6 +12,8 @@
 <p align="center"><img src="https://img.shields.io/badge/Service-XRAY_VLESS-success.svg">  <img src="https://img.shields.io/badge/Service-XRAY_VMESS-success.svg">  <img src="https://img.shields.io/badge/Service-XRAY_TROJAN-success.svg"> <img src= "https://img.shields.io/badge/Service-Websocket-success.svg"> <img src= "https://img.shields.io/badge/Service-GRPC-success.svg"> <img src= "https://img.shields.io/badge/Service-Shadowsocks-success.svg">  
 <p <p align="center"><img src="https://img.shields.io/badge/Service-Webmin-success.svg"> <img src="https://img.shields.io/badge/Service-Helium-success.svg">
 <p <p align="center"><img src="https://wangchujiang.com/sb/status/stable.svg">
+
+<img src="https://github.com/hokagelegend2023/alpha3/blob/33370fe510550c530c62b0d57beb52ffdc89cbc7/scrypt%20foto.jpg">  <img src="https://img.shields.io/badge/Service-Fail2Ban-
   
 # Required VPS is still fresh (MUST) / have never installed anything
 <br>
