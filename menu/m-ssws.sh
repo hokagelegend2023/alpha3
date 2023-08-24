@@ -13,7 +13,7 @@ MYIP=$(wget -qO- ipv4.icanhazip.com);
 echo "Checking VPS"
 clear
 echo -e "$COLOR1┌─────────────────────────────────────────────────┐${NC}"
-echo -e "$COLOR1│${NC} ${COLBG1}       • SHADOWSHOCK ACCOUNT •           ${NC} $COLOR1│$NC"
+echo -e "$COLOR1│${NC} ${COLBG1}       • SHADOWSHOCK ACCOUNT •              ${NC} $COLOR1│$NC"
 echo -e "$COLOR1└─────────────────────────────────────────────────┘${NC}"
 echo -e ""
 echo -e "${COLOR1} [01]${NC} Create Account Shadowsocks      $NC"
