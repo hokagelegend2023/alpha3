@@ -1,4 +1,4 @@
-# ** SCRYPT LANGSUNG INSTAL DAN BANYAK TAMBAHAN ADD ONS **
+# ** SCRYPT VPS PREMIUM INSTALL **
 
 # Order from me (MUST READ) before using
 
