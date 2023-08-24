@@ -84,7 +84,7 @@ else
 fi
 
 # // SSH OPENVPN
-openvpn=$( /etc/init.d/openvpn status | grep Active | awk '{print $3}' | sed 's/(//g' | sed 's/)//g' )
+openvpn=$( systemctl status --now openvpn-server@server-tcp-1194 | grep Active | awk '{print $3}' | sed 's/(//g' | sed 's/)//g' )
 if [[ $openvpn == "running" ]]; then
     status_openvpn="${GREEN}ON${NC}"
 else
