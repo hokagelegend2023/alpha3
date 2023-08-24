@@ -83,6 +83,15 @@ else
     status_wst="${RED}OFF${NC}"
 fi
 
+# // SSH OPENVPN
+openvpn=$( /etc/init.d/openvpn status | grep Active | awk '{print $3}' | sed 's/(//g' | sed 's/)//g' )
+if [[ $openvpn == "running" ]]; then
+    status_openvpn="${GREEN}ON${NC}"
+else
+    status_openvpn="${RED}OFF${NC}"
+fi
+/etc/init.d/openvpn status
+
 # // SSH Websocket Proxy Dropbear
 ssh_wstdb=$( systemctl status ws-stunnel.service | grep Active | awk '{print $3}' | sed 's/(//g' | sed 's/)//g' )
 if [[ $ssh_wstdb == "running" ]]; then
@@ -217,7 +226,7 @@ echo -e "$COLOR1│$NC [ SSH WS   : ${status_wst} ]    [ XRAY : ${status_xray} ]
 echo -e "$COLOR1│$NC                                                          $COLOR1│$NC"
 echo -e "$COLOR1│$NC [ SW-SHOCK : ${status_xray} ]    [ DROPBEAR : ${status_dropbear} ]  [ Slow DNS : ${status_sldns} ]$COLOR1│$NC"
 echo -e "$COLOR1│$NC                                                          $COLOR1│$NC"
-echo -e "$COLOR1│$NC [ UDP-COSTUM : ${status_udp} ]  [ GRPC : ${status_xray} ]      [ RUNNING : ${status_sldns} ] $COLOR1│$NC"
+echo -e "$COLOR1│$NC [ UDP-COSTUM : ${status_udp} ]  [ GRPC : ${status_xray} ]      [ RUNNING : ${status_openvpn} ] $COLOR1│$NC"
 echo -e "$COLOR1│$NC                                                          $COLOR1│$NC"
 echo -e "$COLOR1└──────────────────────────────────────────────────────────┘${NC}"
 echo -e "$COLOR1┌─────────────────────────────────────────────────────────────┐${NC}"
