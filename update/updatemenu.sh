@@ -5,6 +5,7 @@
 cd /usr/bin/
 rm running
 rm add-tr
+rm m-trojan
 
 
 # download menu
