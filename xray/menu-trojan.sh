@@ -296,7 +296,7 @@ echo -e "$COLOR1┌────────────────────�
 echo -e "$COLOR1│${NC} Remarks     : ${user}" 
 echo -e "$COLOR1│${NC} Expired On  : $exp" 
 echo -e "$COLOR1│${NC} Host/IP     : ${domain}" 
-echo -e "$COLOR1│${NC} Port        : ${tr}" 
+echo -e "$COLOR1│${NC} Port        : 443,80" 
 echo -e "$COLOR1│${NC} Key         : ${uuid}" 
 echo -e "$COLOR1│${NC} Path        : /trojan-ws"
 echo -e "$COLOR1│${NC} Path WSS    : wss://who.int/trojan-ws" 
