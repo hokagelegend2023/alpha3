@@ -4,6 +4,7 @@
 # hapus menu
 cd /usr/bin/
 rm running
+rm add-tr
 
 
 # download menu
@@ -17,8 +18,10 @@ wget -O menu-backup "https://raw.githubusercontent.com/hokagelegend2023/alpha3/m
 wget -O running "https://raw.githubusercontent.com/hokagelegend2023/alpha3/main/update/running.sh"
 wget -O info "https://raw.githubusercontent.com/hokagelegend2023/alpha3/main/update/info.sh" 
 wget -O alpha3-update "https://raw.githubusercontent.com/hokagelegend2023/update/main/alpha3-update"
+wget -O add-tr "https://raw.githubusercontent.com/hokagelegend2023/alpha3/main/xray/menu-trojan.sh"
 
 chmod +x info
+chmod +x add-tr
 chmod +x alpha3-update
 chmod +x restart
 chmod +x addssh
@@ -37,8 +40,6 @@ chmod +x vmessmenu
 chmod +x vlessmenu
 chmod +x grpcmenu
 chmod +x grpcupdate
-chmod +x trmenu
-chmod +x trgomenu
 chmod +x setmenu
 chmod +x slowdnsmenu
 chmod +x running
