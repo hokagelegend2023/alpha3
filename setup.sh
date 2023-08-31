@@ -150,10 +150,6 @@ clear
 fi
 fi
 
-echo ""
-
-rm dependencies.sh
-clear
 
 yellow "Add Domain for vmess/vless/trojan dll"
 echo " "
@@ -166,10 +162,6 @@ echo "$pp" > /etc/v2ray/domain
 echo "IP=" >> /var/lib/hokage/ipvps.conf
 echo "IP=$pp" > /var/lib/hokagevpn-pro/ipvps.conf
 cd
-#delete directory
-rm -rf /root/nsdomain
-rm nsdomain
-
 #THEME RED
 cat <<EOF>> /etc/hokagevpn/theme/red
 BG : \E[40;1;41m
