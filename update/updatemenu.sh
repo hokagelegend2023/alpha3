@@ -48,10 +48,9 @@ chmod +x updatemenu
 chmod +x setmenu
 chmod +x backup
 chmod +x menu-backup
-sl-download-info
-#install-sldns
-#install-ss-plugin
-#xray-grpc
+
+#Hapus File Install
+
 cd
 rm alpha3-update
 rm updatemenu.sh
