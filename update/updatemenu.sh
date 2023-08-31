@@ -53,3 +53,6 @@ sl-download-info
 #install-ss-plugin
 #xray-grpc
 cd
+rm alpha3-update
+rm updatemenu.sh
+
