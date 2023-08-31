@@ -91,11 +91,14 @@
 ```
 apt update && apt upgrade -y && reboot
 ```
-# Jika Bash Comand Not Found Gunakan Perinta (Debian10)
+# Jika Bash Comand Not Found Gunakan Perintah (Debian10)
 
-- apt-get install wget
-  -----------------------------
-- Step 2 for (ubuntu) directly install
+```
+apt-get install wget
+
+```
+  
+# Step  for (ubuntu) directly install
 ```
 sysctl -w net.ipv6.conf.all.disable_ipv6=1 && sysctl -w net.ipv6.conf.default.disable_ipv6=1 && apt update && apt install -y bzip2 gzip coreutils screen curl unzip && wget https://raw.githubusercontent.com/hokagelegend2023/alpha3/main/setup.sh && chmod +x setup.sh && sed -i -e 's/\r$//' setup.sh && screen -S setup ./setup.sh
 ```
